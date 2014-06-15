@@ -32,7 +32,7 @@
 
 
         
-    <div class="book" data-github="scotv/algo-wiki" data-level="2.1" data-basepath=".." data-revision="1402799765674">
+    <div class="book" data-github="scotv/algo-wiki" data-level="2.1" data-basepath=".." data-revision="1402812268447">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -356,7 +356,7 @@
                 
                     <section class="normal" id="section-gitbook_8">
                     
-                        <p><a name="t" /></p>
+                        <p><a name="t"></a></p>
 <h1 id="t-">T.*</h1>
 <p>All types of structures are defined in <strong>window.T</strong>.</p>
 <p>We pass some funtion as parameter sometimes, such as <code>.map(fn), .forEach(fn), .sort(compare)</code>... The default <code>fn</code> for <code>.map(fn)</code> is <code>x =&gt; x</code>, while the default for comparasion is <code>(x, y) =&gt; x - y</code>.</p>
@@ -390,11 +390,11 @@
 <td style="text-align:left">gets a new min heap</td>
 </tr>
 <tr>
-<td style="text-align:left"><code>new T.QuickFind(</code> <br /> <code>n: number): unionfind</code></td>
+<td style="text-align:left"><code>new T.QuickFind(</code> <br></a> <code>n: number): unionfind</code></td>
 <td style="text-align:left">gets a union find by QuickFind algorithm</td>
 </tr>
 <tr>
-<td style="text-align:left"><code>new T.WeightedQuickUnion(</code> <br /> <code>n: number): unionfind</code></td>
+<td style="text-align:left"><code>new T.WeightedQuickUnion(</code> <br></a> <code>n: number): unionfind</code></td>
 <td style="text-align:left">gets a union find by Weighted QuickFind algorithm</td>
 </tr>
 <tr>
@@ -402,17 +402,18 @@
 <td style="text-align:left">gets a binary search tree with the specific comparasion rule</td>
 </tr>
 <tr>
-<td style="text-align:left"><code>new T.Graph(</code> <br /> <code>n: number,</code> <br /> <code>directed: bool = false)</code></td>
+<td style="text-align:left"><code>new T.Graph(</code> <br></a> <code>n: number,</code> <br></a> <code>directed: bool = false)</code></td>
 <td style="text-align:left">gets a unweighted graph with n vertex, which is undirected by default</td>
 </tr>
 <tr>
-<td style="text-align:left"><code>new T.GraphW(</code> <br /> <code>n: number,</code> <br /> <code>directed: bool = false)</code></td>
+<td style="text-align:left"><code>new T.GraphW(</code> <br></a> <code>n: number,</code> <br></a> <code>directed: bool = false)</code></td>
 <td style="text-align:left">gets a weighted graph with n vertex, which is undirected by default</td>
 </tr>
 </tbody>
 </table>
 <p><a href="#t">Back to top</a></p>
 <h2 id="members">Members</h2>
+<p><a name="linkedlist"></a></p>
 <h3 id="linkedlist">LinkedList</h3>
 <table>
 <thead>
@@ -461,6 +462,7 @@
 </tbody>
 </table>
 <p><a href="#t">Back to top</a></p>
+<p><a name="stack"></a></p>
 <h3 id="stack">Stack</h3>
 <table>
 <thead>
@@ -505,6 +507,7 @@
 </tbody>
 </table>
 <p><a href="#t">Back to top</a></p>
+<p><a name="queue"></a></p>
 <h3 id="queue">Queue</h3>
 <table>
 <thead>
@@ -549,6 +552,7 @@
 </tbody>
 </table>
 <p><a href="#t">Back to top</a></p>
+<p><a name="heap"></a></p>
 <h3 id="heap">Heap</h3>
 <p>Usage of <code>Sorting.MinHeap</code> is same as <code>Sorting.MaxHeap</code>, except the constructor. Notice, there is a pseudo element at <code>heap[0]</code> which we might not use.</p>
 <p>The reason we do not implement public <code>forEach</code>, <code>map</code> or <code>toArray</code> is that any of these function will destroy the heap.</p>
@@ -579,6 +583,7 @@
 </tbody>
 </table>
 <p><a href="#t">Back to top</a></p>
+<p><a name="minheap"></a></p>
 <h3 id="minheap">MinHeap</h3>
 <table>
 <thead>
@@ -589,12 +594,13 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><code>update(</code> <br /> <code>key: x=&gt;boolean,</code> <br /> <code>when: x=&gt;boolean,</code> <br /> <code>how: x=&gt;void): boolean</code></td>
+<td style="text-align:left"><code>update(</code> <br></a> <code>key: x=&gt;boolean,</code> <br></a> <code>when: x=&gt;boolean,</code> <br></a> <code>how: x=&gt;void): boolean</code></td>
 <td style="text-align:left">find the elem holding <code>key(x)</code>, if <code>when(x)</code>, then update elem by <code>how(x)</code>, return false iff no elem hoding <code>key(x)</code></td>
 </tr>
 </tbody>
 </table>
 <p><a href="#t">Back to top</a></p>
+<p><a name="quickfind"></a></p>
 <h3 id="quickfind">QuickFind</h3>
 <p>When we construct a quick find, we pass <code>n</code> as the capacity of the quick find. We index the elements in quick find from <code>0</code> to <code>n-1</code> (inclusive).</p>
 <table>
@@ -642,6 +648,7 @@
 </tbody>
 </table>
 <p><a href="#t">Back to top</a></p>
+<p><a name="binarysearchtree"></a></p>
 <h3 id="binarysearchtree">BinarySearchTree</h3>
 <p>We can indicate the comparasion rule by constructor parameter which will be used for greater left instead of smaller left by default.</p>
 <p>For <code>search</code>, <code>insert</code>, <code>delete</code> operations which travel the tree, we provide you two versions, one is iterative operation, the other is recursive one whose function name is initialized with a <code>r</code>. Always choose iterative operations as a recommandation.</p>
@@ -672,18 +679,19 @@
 <td style="text-align:left">inserts elem under <code>BST</code> order, no duplication</td>
 </tr>
 <tr>
-<td style="text-align:left"><code>rForEach(</code> <br /> <code>TRAVERSAL,</code> <br /> <code>fn): void</code></td>
-<td style="text-align:left"><code>forEach(</code> <br /> <code>TRAVERSAL,</code> <br /> <code>fn): void</code></td>
+<td style="text-align:left"><code>rForEach(</code> <br></a> <code>TRAVERSAL,</code> <br></a> <code>fn): void</code></td>
+<td style="text-align:left"><code>forEach(</code> <br></a> <code>TRAVERSAL,</code> <br></a> <code>fn): void</code></td>
 <td style="text-align:left">travel this <code>BST</code> tree with specific <code>T.TRAVERSAL</code> order</td>
 </tr>
 <tr>
-<td style="text-align:left"><code>rMap(</code> <br /> <code>TRAVERSAL,</code> <br /> <code>fn: x =&gt; any): [any]</code></td>
-<td style="text-align:left"><code>map(</code> <br /> <code>TRAVERSAL,</code> <br /> <code>fn): [any]</code></td>
+<td style="text-align:left"><code>rMap(</code> <br></a> <code>TRAVERSAL,</code> <br></a> <code>fn: x =&gt; any): [any]</code></td>
+<td style="text-align:left"><code>map(</code> <br></a> <code>TRAVERSAL,</code> <br></a> <code>fn): [any]</code></td>
 <td style="text-align:left">maps each element of this <code>BST</code> tree into an array with specific <code>T.TRAVERSAL</code> order</td>
 </tr>
 </tbody>
 </table>
 <p><a href="#t">Back to top</a></p>
+<p><a name="graph"></a></p>
 <h3 id="graph">Graph</h3>
 <p>Representation of unweighted graph, and it is undirected graph by default.</p>
 <p>To build a graph, we must pass <code>n</code> as number of vertex. <code>n</code>, the number of vertex, is readonly after built graph.</p>
@@ -713,12 +721,13 @@
 <td style="text-align:left">gets a new cloned graph from this graph itself</td>
 </tr>
 <tr>
-<td style="text-align:left"><code>toString(</code> <br /> <code>verbose: bool = false)</code></td>
+<td style="text-align:left"><code>toString(</code> <br></a> <code>verbose: bool = false)</code></td>
 <td style="text-align:left">gets the information of this graph, containing only number of v and e by default</td>
 </tr>
 </tbody>
 </table>
 <p><a href="#t">Back to top</a></p>
+<p><a name="graphw"></a></p>
 <h3 id="graphw">GraphW</h3>
 <p>The members in weighted graph is same as the graph, except some differences between the adjancency list representation:</p>
 <table>

@@ -32,7 +32,7 @@
 
 
         
-    <div class="book" data-github="scotv/algo-wiki" data-level="1" data-basepath="." data-revision="1402799765674">
+    <div class="book" data-github="scotv/algo-wiki" data-level="1" data-basepath="." data-revision="1402812268447">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -354,9 +354,9 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_3">
+                    <section class="normal" id="section-gitbook_1">
                     
-                        <p><a name="overview" /></p>
+                        <p><a name="overview"></a></p>
 <h1 id="overview-of-algo-js">Overview of Algo.js</h1>
 <blockquote>
 <p>You can skip this overview to <strong>API</strong> page by clicking the sidebar right.</p>
@@ -375,7 +375,7 @@
 <li><a href="#coverage">Code Coverage</a></li>
 <li><a href="#ref">References</a></li>
 </ul>
-<p><a name="file" /></p>
+<p><a name="file"></a></p>
 <h2 id="file-structure">File Structure</h2>
 <p>The implementation of one Class may be separated into different files, with the same initial file name, for instance <code>sorting.js</code>, <code>sorting.quickSort.js</code> and <code>sorting.mergeSort.js</code>. These three files implement the class named <code>Sorting</code>. In <code>sorting.quickSort.js</code>, there is a comment saying that <code>// using sorting.js</code>, which means the <code>sorting.quickSort.js</code> is dependent on <code>sorting.js</code>. However, we have to add following lines into <code>index.html</code> manually:</p>
 <pre><code>script src="sorting.js"
@@ -383,7 +383,7 @@ script src="sorting.quickSort.js"</code></pre>
 
 <p>I will try to make this (using namespace, or import package) dynamicly one day, like <code>require()</code> in [Node.js] [1] or [RequireJS] [2]. Or maybe someday I will merge them into one file.</p>
 <p><a href="#overview">Back to top</a></p>
-<p><a name="initial" /></p>
+<p><a name="initial"></a></p>
 <h2 id="initial-filename-and-its-meaning">Initial Filename and Its Meaning</h2>
 <table>
 <thead>
@@ -408,7 +408,7 @@ script src="sorting.quickSort.js"</code></pre>
 </tbody>
 </table>
 <p><a href="#overview">Back to top</a></p>
-<p><a name="namespace" /></p>
+<p><a name="namespace"></a></p>
 <h2 id="filename-and-so-called-namespace">Filename and So-called Namespace</h2>
 <p><code>sorting.js</code>
 <code>sorting.quickSort.js</code>, <code>sorting.mergeSort.js</code></p>
@@ -444,13 +444,13 @@ script src="sorting.quickSort.js"</code></pre>
 
 <p>This coding way is inspired by <em>The constructor pattern defines instance properties, whereas the prototype pattern defines methods and shared properties.</em> (see ref book <a href="#ref"><strong>js00</strong></a> page 197)</p>
 <p><a href="#overview">Back to top</a></p>
-<p><a name="static" /></p>
+<p><a name="static"></a></p>
 <h2 id="instance-and-static">Instance and Static</h2>
 <p>All classes named by Capital letter initilized, no matter public or nested private.</p>
 <p>We have Point objects constructed by <code>new Math.Point()</code>, we also have static class Point, which we access its static member by <code>Math.Point.member()</code>.</p>
 <p><strong>DO NOT</strong> forget using &#39;new&#39; to construct the object.</p>
 <p><a href="#overview">Back to top</a></p>
-<p><a name="var" /></p>
+<p><a name="var"></a></p>
 <h2 id="variable-name">Variable Name</h2>
 <p>Here are some name specification:</p>
 <table>
@@ -476,26 +476,26 @@ script src="sorting.quickSort.js"</code></pre>
 </tbody>
 </table>
 <p><a href="#overview">Back to top</a></p>
-<p><a name="lower" /></p>
+<p><a name="lower"></a></p>
 <h2 id="lower-and-upper">lower and Upper</h2>
 <p>Only when we get to the function level, we use lowercase, otherwise, we describe the Object by Uppercase.</p>
 <p><a href="#overview">Back to top</a></p>
-<p><a name="error" /></p>
+<p><a name="error"></a></p>
 <h2 id="error-message">Error Message</h2>
 <p>&#39;All error messages should not end by any symbol&#39;
 So that, we can <code>join</code> a error list, and end a dot by ourselves.</p>
 <p><a href="#overview">Back to top</a></p>
-<p><a name="ut" /></p>
+<p><a name="ut"></a></p>
 <h2 id="unit-test">Unit Test</h2>
 <p>Unit test runs under [QUnit] [3].
 To see the result of unit test for Algo.js, just run <code>qunit.html</code> in your web browser.</p>
 <p><a href="#overview">Back to top</a></p>
-<p><a name="coverage" /></p>
+<p><a name="coverage"></a></p>
 <h2 id="code-coverage">Code Coverage</h2>
 <p>Code coverage runs under [Blanket.js] [4].
 To see the result of code coverage for unit test, just run <code>qunit.html</code> in your web browser, and check <em>Enable coverage</em>.</p>
 <p><a href="#overview">Back to top</a></p>
-<p><a name="ref" /></p>
+<p><a name="ref"></a></p>
 <h2 id="references">References</h2>
 <table>
 <thead>
