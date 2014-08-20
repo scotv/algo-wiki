@@ -1,18 +1,19 @@
 \section{Array}
 The basic extensions for Array.
-\subsection{Static}
-\begin{tabular}{ll}
 
-Call & Meaning\\
-`Array.zip(arr1, arr2): [ ]` & returns an new array, each item in which is `[x, y]`, where `x` from `arr1` and `y` from `arr2`\\
-`Array.swap(arr, i, j): void` & swaps the elements at index i and j
+\subsection*{Array.zip(arr1, arr2): [ ]} 
+Returns an new array, each item in which is \cd{[x, y]}, where \cd{x} from \cd{arr1} and \cd{y} from \cd{arr2}.
 
-\end{tabular}
+\begin{lstlisting}
+Array.zip([1, 2, 3], ['A', 'B', 'C'])
+// [[1, 'A'], [2, 'B'], [3, 'C']]
+\end{lstlisting}
 
-\subsection{Members}
+\subsection*{Array.swap(arr, i, j): void} 
+Swaps the elements at index \cd{i} and \cd{j}, and does modify the original \cd{arr}.
 
-\begin{tabular}{ll}
-Call & Meaning\\
-`clone(): []` & gets a new array cloned from itself\\
-`zip(that): []` & gets Array.zip(this, that)
-\end{tabular}
+\subsection*{.clone(): [ ]}
+Get a new array cloned from the \cd{arr} itself.
+
+\subsection*{.zip(that): [ ]}
+Gets \cd{Array.zip(this, that)}.

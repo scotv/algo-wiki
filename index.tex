@@ -1,11 +1,23 @@
 \documentclass{article}
-\usepackage{hyperref}
+\usepackage{hyperref, listings, color}
+
+% shortcut for scotv's github homepage
+\newcommand{\scotv}{https://github.com/scotv}
+
+% shortcut for inline code snippet, like `code` in markdown
+% \newcommand{\cd}[1]{\colorbox[rgb]{0.86,0.86,0.86}{\lstinline$#1$}}
+\newcommand{\cd}[1]{\lstinline$#1$}
+
+% set style for multiple lines code snippet
+\lstset{numbers=left, numberstyle=\tiny
+	, stepnumber=2, numbersep=5pt
+	, backgroundcolor=\color[rgb]{0.86,0.86,0.86}
+	, basicstyle=\footnotesize\ttfamily
+	, breaklines=true}
 
 \title{The API Documents for algo-x}
 \author{Scott, Liu}
 \date{August, 12, 2014}
-
-\newcommand{\scotv}{https://github.com/scotv}
 
 \begin{document}
 \maketitle
