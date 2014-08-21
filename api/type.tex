@@ -4,25 +4,25 @@ All types of structures are defined in \cd{window.T}.
 We pass some funtion as parameter sometimes, such as \cd{.map(fn), .forEach(fn), .sort(compare)} \ldots The default \cd{fn} for \cd{.map(fn)} is \cd{x => x}, while the default for comparasion is \cd{(x, y) => x - y}.
 
 \subsection{Type Constructors}
-\subsubsection*{new T.LinkedList()}
+\mmb{new T.LinkedList()}
 Constructs a new linked list
-\subsubsection*{new T.Stack()}
+\mmb{new T.Stack()}
 Constructs a new stack
-\subsubsection*{new T.Queue()}
+\mmb{new T.Queue()}
 Constructs a new queue
-\subsubsection*{new T.MaxHeap(): heap}
+\mmb{new T.MaxHeap(): heap}
 Gets a new max heap
-\subsubsection*{new T.MinHeap(compare): heap}
+\mmb{new T.MinHeap(compare): heap}
 Gets a new min heap
-\subsubsection*{new T.QuickFind(n: number): unionfind}
+\mmb{new T.QuickFind(n: number): unionfind}
 Gets a union find by QuickFind algorithm
-\subsubsection*{new T.WeightedQuickUnion(n: number): unionfind}
+\mmb{new T.WeightedQuickUnion(n: number): unionfind}
 Gets a union find by Weighted QuickFind algorithm
-\subsubsection*{new T.BinarySearchTree(compare)}
+\mmb{new T.BinarySearchTree(compare)}
 Gets a Binary Search Tree with the specific comparasion rule
-\subsubsection*{new T.Graph(n: number, directed: bool = false)}
+\mmb{new T.Graph(n: number, directed: bool = false)}
 Gets a unweighted graph with \cd{n} vertex, which is undirected by default
-\subsubsection*{new T.GraphW(n: number, directed: bool = false)}
+\mmb{new T.GraphW(n: number, directed: bool = false)}
 Gets a weighted graph with \cd{n} vertex, which is undirected by default
 
 \subsection{General Members of Linear Collection}
@@ -36,19 +36,19 @@ Linear collection like \cd{LinkedList, Stack, Queue} \ldots have the default tra
 
 There are some general members defined in linear collection. 
 
-\subsubsection*{.size(): number}
+\mmb{.size(): number}
 Gets the size (length) of the linear collecion.
-\subsubsection*{.isEmpty(): boolean}
+\mmb{.isEmpty(): boolean}
 Returns \cd{true} when the linear collection is empty, otherwise \cd{false}.
-\subsubsection*{.forEach(x=>void): void}
+\mmb{.forEach(x =\textgreater void): void}
 Applies a function to each element in default order.
-\subsubsection*{.map(x=>any): [any]}
+\mmb{.map(x =\textgreater any): [any]}
 Gets a new array mapped from \cd{x => any} in default order.
-\subsubsection*{toArray(): [ ]}
+\mmb{toArray(): [ ]}
 Gets a new array containing each element of this linear collection in default order.
 
 \subsection{LinkedList}
-\subsubsection*{insert(any, i): void}
+\mmb{insert(any, i): void}
 Inserts an element after ith element, indexing from 0, if \cd{i >= size()}, insert elem at the end of linear collection.
 %
 %## Members
