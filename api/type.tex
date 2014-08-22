@@ -1,7 +1,8 @@
 \section{Type Extension}
 All types of structures are defined in \cd{window.T}.
 
-We pass some funtion as parameter sometimes, such as \cd{.map(fn), .forEach(fn), .sort(compare)} \ldots The default \cd{fn} for \cd{.map(fn)} is \cd{x => x}, while the default for comparasion is \cd{(x, y) => x - y}.
+We pass some funtion as parameter sometimes, such as \cd{.map(fn), .forEach(fn), .sort(compare)} \ldots 
+The default \cd{fn} for \cd{.map(fn)} is \cd{x => x}, while the default for comparasion is \cd{(x, y) => x - y}.
 
 \subsection{Type Constructors}
 \mmb{new T.LinkedList()}
@@ -36,160 +37,152 @@ Linear collection like \cd{LinkedList, Stack, Queue} \ldots have the default tra
 
 There are some general members defined in linear collection. 
 
-\mmb{.size(): number}
+\mmb{size(): number}
 Gets the size (length) of the linear collecion.
-\mmb{.isEmpty(): boolean}
+\mmb{isEmpty(): boolean}
 Returns \cd{true} when the linear collection is empty, otherwise \cd{false}.
-\mmb{.forEach(x =\textgreater void): void}
+\mmb{forEach(x =\textgreater void): void}
 Applies a function to each element in default order.
-\mmb{.map(x =\textgreater any): [any]}
+\mmb{map(x =\textgreater any): [any]}
 Gets a new array mapped from \cd{x => any} in default order.
 \mmb{toArray(): [ ]}
 Gets a new array containing each element of this linear collection in default order.
 
 \subsection{LinkedList}
 \mmb{insert(any, i): void}
-Inserts an element after ith element, indexing from 0, if \cd{i >= size()}, insert elem at the end of linear collection.
-%
-%## Members
-%<a name="linkedlist"></a>
-%### LinkedList
-%Call | Meaning
-%:----|:-------
-%`size(): number` | the size of the list
-%`isEmpty(): boolean` | true when list is empty, otherwise false
-%`` | 
-%`` | insert elem at the end of list
-%`reverse(): void` | reverse the list itself
-%`remove(any): void` | remove the first node with elem, if no such node, wo do nothing
-%`forEach(x => void): void` | apply the function to each element in `0..n-1` order
-%`map(x => any): [any]` |  get a new array mapped from `x => any` in `0..n-1` order
-%`toArray(): []` | get a new array containing each element of list in `0..n-1` order
-%
-%[Back to top](#t)
-%
-%<a name="stack"></a>
-%### Stack
-%Call | Meaning
-%:----|:-------
-%`size(): number` | the size of the list
-%`isEmpty(): boolean` | true when list is empty, otherwise false
-%`push(any): void` | push item into stack
-%`peek(): any` | get the last item from stack, error when empty
-%`pop(): any` | get the last item and remove it, error when empty
-%`forEach(x => void): void` | apply the function to each element in LIFO order
-%`map(x => any): [any]` |  get a new array mapped from `x => any` in LIFO order
-%`toArray(): []` | get a new array containing each element of stack in LIFO order
-%
-%[Back to top](#t)
-%
-%<a name="queue"></a>
-%### Queue
-%Call | Meaning
-%:----|:-------
-%`size(): number` | the size of the list
-%`isEmpty(): boolean` | true when list is empty, otherwise false
-%`enqueue(any): void` | add item into queue
-%`peek(): any` | get the first added item from queue, error when empty
-%`dequeue(): any` | get the first added item and remove it, error when empty
-%`forEach(x => void): void` | apply the function to each element in FIFO order
-%`map(x => any): [any]` |  get a new array mapped from `x => any` in FIFO order
-%`toArray(): []` | get a new array containing each element of queue in FIFO order
-%
-%[Back to top](#t)
-%
-%<a name="heap"></a>
-%### Heap
-%Usage of `Sorting.MinHeap` is same as `Sorting.MaxHeap`, except the constructor. Notice, there is a pseudo element at `heap[0]` which we might not use.
-%
-%The reason we do not implement public `forEach`, `map` or `toArray` is that any of these function will destroy the heap.
-%
-%Call | Meaning
-%:----|:-------
-%`isEmpty(): boolean` | returns true if there is no real element in heap
-%`size(): number` | gets the number of elements in heap
-%`push(any): number` | inserts a element into the heap, and gets length of the new heap
-%`pop(): any` | gets the max / min element from heap, and remove it, keeping heap sorted
-%
-%[Back to top](#t)
-%
-%<a name="minheap"></a>
-%### MinHeap
-%Call | Meaning
-%:----|:-------
-%`update(` <br></a> `key: x=>boolean,` <br></a> `when: x=>boolean,` <br></a> `how: x=>void): boolean` | find the elem holding `key(x)`, if `when(x)`, then update elem by `how(x)`, return false iff no elem hoding `key(x)`
-%
-%[Back to top](#t)
-%
-%<a name="quickfind"></a>
-%### QuickFind
-%When we construct a quick find, we pass `n` as the capacity of the quick find. We index the elements in quick find from `0` to `n-1` (inclusive).
-%
-%Call | Meaning
-%:----|:-------
-%`connected(p, q): boolean` | returns true iff `p` is connected with `q`
-%`count(): number` | gets the number of components which are not connected with each other
-%`union(p, q): number` | unions `p` with `q`, and returns the count after union
-%
-%Different algorithms of quick find bring us different growth of the cost, see below:
-%
-%Type | `connected(p, q)` | `union(p, q)`
-%:----|:-----------------:|:-------------
-%`T.QuickFind(N)` | `O(1)` | `O(N)`
-%`T.WeightedQuickFind(N)` | `O(lg N)` | `O(lg N)`
-%
-%[Back to top](#t)
-%
-%<a name="binarysearchtree"></a>
-%### BinarySearchTree
-%We can indicate the comparasion rule by constructor parameter which will be used for greater left instead of smaller left by default.
-%
-%For `search`, `insert`, `delete` operations which travel the tree, we provide you two versions, one is iterative operation, the other is recursive one whose function name is initialized with a `r`. Always choose iterative operations as a recommandation.
-%
-%And, here is definition for some properties of tree, according to Wikipedia:
-%
-%> The height of a node is the length of the longest downward path to a leaf from that node. 
-%> 
-%> The depth of a node is the length of the path to its root (i.e., its root path). The root node has depth zero, leaf nodes have height zero.
-%> 
-%> The height of the root is the height of the tree. An empty tree (tree with no nodes, if such are allowed) has depth and height `−1`.
-%
-%We have defined different traversal way in `T.TRAVERSAL.*`. The default traversal way is `T.TRAVERSAL.IN_ORDER`.
-%
-%Recursive Call | Iterative Call | Meaning
-%:--------------|:---------------|:-------
-%`rSearch(elem): node` | `search(elem): node` | searches elem in this tree, returns node which contains elem, or null if not exsits
-%`rInsert(elem): void` | `insert(elem): void` | inserts elem under `BST` order, no duplication
-%`rForEach(` <br></a> `TRAVERSAL,` <br></a> `fn): void` | `forEach(` <br></a> `TRAVERSAL,` <br></a> `fn): void` | travel this `BST` tree with specific `T.TRAVERSAL` order
-%`rMap(` <br></a> `TRAVERSAL,` <br></a> `fn: x => any): [any]` | `map(` <br></a> `TRAVERSAL,` <br></a> `fn): [any]` | maps each element of this `BST` tree into an array with specific `T.TRAVERSAL` order
-%
-%[Back to top](#t)
-%
-%<a name="graph"></a>
-%### Graph
-%Representation of unweighted graph, and it is undirected graph by default.
-%
-%To build a graph, we must pass `n` as number of vertex. `n`, the number of vertex, is readonly after built graph.
-%
-%However, when we call `v()` or `e()` as below, the number we get is the valid number of vertex or edges, which has not been visited or marked.
-%
-%Call | Meaning
-%:----|:-------
-%`n: number` | gets the actual number of vertex, whether it is visited, marked or not
-%`v(): number`| gets the number of vertex, which has not been visited
-%`e(): number`| gets the number of edges, which has not been marked invalid, and the sourcing vertex has not been visited
-%`clone(): Graph` | gets a new cloned graph from this graph itself
-%`toString(` <br></a> `verbose: bool = false)` | gets the information of this graph, containing only number of v and e by default
-%
-%[Back to top](#t)
-%
-%<a name="graphw"></a>
-%### GraphW
-%The members in weighted graph is same as the graph, except some differences between the adjancency list representation:
-%
-%Type | Element in Adjancency List
-%:----|:-------
-%`T.Graph` | `[v, [u1, u2, u3, ...]]`
-%`T.GraphW` | `[v, [(u1, w1), (u2, w2), (u3, w3), ...]]`
-%
-%[Back to top](#t)
+Inserts an element after ith element, indexing from 0, if \cd{i >= size()}, insert elem at the end of list.
+\mmb{push(any): void}
+Inserts an element at the end of list.
+\mmb{reverse(): void}
+Reverses the list itself.
+\mmb{remove(any): void}
+Removes the first node with such element, if no such node, keeps array unchanged.
+
+\subsection{Stack}
+\mmb{push(any): void}
+Pushes \cd{any} item into \cd{stack}.
+\mmb{peek(): any}
+Gets the last added item from \cd{stack}, throws \cd{error} when empty.
+\mmb{pop(): any}
+Gets and removes the last added item from \cd{stack}, throws \cd{error} when empty.
+
+\subsection{Queue}
+\mmb{enqueue(any): void}
+Addes item into \cd{queue}.
+\mmb{peek(): any}
+Gets the first added item from \cd{queue}, throws \cd{error} when empty.
+\mmb{dequeue(): any}
+Gets and removes the first added item from \cd{queue}, throws \cd{error} when empty.
+
+\subsection{Heap}
+Usage of \cd{T.MinHeap} is same as \cd{T.MaxHeap}, except invoking the constructor.
+Notice that there is a pseudo element at \cd{heap[0]} which we might not use.
+
+The reason we do not implement public \cd{forEach}, \cd{map} or \cd{toArray} is
+that any of these functions will destroy the \cd{heap} itself.
+
+\mmb{isEmpty(): boolean}
+Returns \cd{true} if there is no real element in \cd{heap}, otherwise \cd{false}.
+\mmb{size(): number}
+Gets the number of elements in \cd{heap}.
+\mmb{push(any): number}
+Inserts an element into the \cd{heap}, and gets \cd{size()} of the new \cd{heap}.
+\mmb{pop(): any}
+Get the max element from \cd{MaxHeap}, or the min element from \cd{MinHeap}, 
+the remove it, keeping \cd{heap} sorted.
+\mmb{minheap.update(key, when, how): boolean}
+\cd{minheap.update(key: x => boolean, when: x => boolean, how: x => void): boolean}
+
+Finds the elem holding \cd{key(x)}, if \cd{when(x)}, then updates that elem by \cd{how(x)}, returns \cd{false} iff no elem hoding \cd{key(x)}.
+
+\subsection{QuickFind}
+When we construct a \cd{QuickFind}, we pass \cd{n} as the capacity parameter of the quick find. We mark the elements in quick find from `0` to `n-1` (inclusive).
+
+Different algorithms of quick find bring us different growth of the cost, see below:
+
+\begin{center}
+\begin{tabular}{l | c | c}
+\hline
+Type & \cd{connected(p, q)} & \cd{union(p, q)} \\
+\hline
+\cd{T.QuickFind(N)} & $O(1)$ & $O(N)$ \\
+\cd{T.WeightedQuickFind(N)} & $O(\ln N)$ & $O(\ln N)$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\mmb{connected(p, q): boolean}
+Returns \cd{true} iff \cd{p} is connected with \cd{q}, otherwise \cd{false}.
+\mmb{count(): number}
+Gets the number of components which are not connected with each other.
+\mmb{union(p, q): number}
+Unions \cd{p} with \cd{q}, and returns the \cd{count()} after union.
+
+
+\subsection{BinarySearchTree}
+We can indicate the comparasion rule by constructor parameter which can be used for greater left instead of smaller left by default.
+
+For \cd{search}, \cd{insert} and \cd{delete} operations which travel the tree, there are two versions, the one is iterative operation, the other is recursive one whose function name is initialized with a \cd{r}. 
+
+Always choose iterative operations as a recommandation in \cd{JavaScript}.
+
+And, here is definition for some properties of tree, according to Wikipedia\footnote{Terminology of Tree on Wikipedia, \url{https://en.wikipedia.org/wiki/Tree_(data_structure)\#Terminology}}:
+
+\begin{itemize}
+  \item The height of a node is the length of the longest downward path to a leaf from that node. 
+  \item The depth of a node is the length of the path to its root (i.e., its root path). The root node has depth zero, leaf nodes have height zero.
+  \item The height of the root is the height of the tree. An empty tree (tree with no nodes, if such are allowed) has depth and height $-1$.
+\end{itemize}
+
+We have defined different traversal way in \cd{T.TRAVERSAL.*}. The default traversal way is \cd{T.TRAVERSAL.IN_ORDER}.
+
+\mmb{search(elem): node}
+Searches \cd{elem} in this tree, returns node which contains\cd{elem}, or \cd{null} if not exsits.
+
+Recursive version is \cd{rSearch(elem): node}.
+
+\mmb{insert(elem): void}
+Inserts \cd{elem} under \cd{BST} order, no duplication.
+
+Recursive version is \cd{rInsert(elem): void}.
+
+\mmb{forEach(t: TRAVERSAL, fn): void}
+Travels and applies function \cd{fn} on this \cd{BST} tree with specific \cd{T.TRAVERSA} order.
+
+Recursive version is \cd{rForEach(t: TRAVERSAL, fn): void}.
+
+\mmb{map(t: TRAVERSAL, fn): [any]}
+Maps each element of this \cd{BST} tree into an array with specific \cd{T.TRAVERSA} order.
+
+Recursive version is \cd{rMap(t: TRAVERSAL, fn): void}.
+
+\subsection{Graph}
+Representation of unweighted graph, and it is undirected graph by default.
+
+To build a graph, we must pass \cd{n} as number of vertex. \cd{n}, the number of vertex, is readonly after builted graph.
+However, when we call \cd{v()} or \cd{e()} as below, the number we get is the valid number of vertex or edges, which has not been visited or marked.
+
+\mmb{n: number}
+Gets the actual number of vertex, whether it has been visited, marked or not.
+\mmb{v(): number}
+Gets the number of vertex, which has not been visited.
+\mmb{e(): number}
+Gets the number of edges, which has not been marked invalid, and the sourcing vertex has not been visited.
+\mmb{clone(): Graph}
+Gets a new cloned graph from this original graph itself.
+\mmb{toString(verbose: boolean = false): string}
+Gets the information of this graph, containing only number of vertex and edges by default.
+
+\subsection{GraphW}
+The members in weighted graph is same as the graph, except some differences between the adjancency list representation:
+
+\begin{center}
+\begin{tabular}{l | l}
+\hline
+Type & Element in Adjancency Lis \\
+\hline
+\cd{T.Graph} & \cd{[v, [u1, u2, u3, ...]]} \\
+\cd{T.GraphW} & \cd{[v, [(u1, w1), (u2, w2), (u3, w3), ...]]} \\
+\hline
+\end{tabular}
+\end{center}
