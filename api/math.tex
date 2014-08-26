@@ -1,0 +1,58 @@
+\section{Math Extension}
+The basic extensions for Math.
+
+\mb{Math.mod(i, n): number}
+Returns a positive number $x$, where $i = k * n + x, (x > 0)$.
+\mb{Math.range(start = 0, end, step = 1): [ ]}
+Generates an array of range from \cd{start} (inclusive) to \cd{end} (exclusive), with that \cd{step}.
+\mb{Math.randomInteger(a = 0, b): number}
+Gets a random integer $x$, where $ a \leq x \leq b $.
+ 
+\subsection{Statistics}
+The basic statistics extension that is located in \cd{Math.Stats.*}
+
+\mmb{max(arr): number}
+Gets the max number of an array.
+\mmb{min(arr): number}
+Gets the min number of an array.
+\mmb{sum(arr): number}
+Gets the sum of an array.
+\mmb{mean(arr): number}
+Gets the average of an array.
+\mmb{var(arr): number}
+Gets sample variance of an array.
+\mmb{stddev(arr): number}
+Gets the standard deviation of an array.
+\mmb{linearLeastSquare(X,  Y, fn=(x=\textgreater x) ): [number, number]}
+gets the \cd{[a, b]}, where $fn(Y) = a \cdot fn(X) + b$. passes \cd{Math.log} to get linear least square for $Y = c \cdot X^a$.
+
+
+\subsection{Math.Point}
+The point for the vector.
+
+\mmb{new Math.Point(arr)}
+Builds new point by coordinates array.
+
+\subsection{Math.Vector}
+The vector in $n$ dimension.
+
+\mmb{new Math.Vector(arr)}
+Builds new vector by coordinates array.
+\mmb{new Math.Vector(arr1, arr2)}
+Builds new vector by coordinates array of two point.
+\mmb{new Math.Vector(point1, point2)}
+Builds new vector by two Math.Point.
+
+\mmb{Math.Vector.norm(vec): number}
+Gets the length of the vec.
+\mmb{Math.Vector.dot(v1, v2): number}
+Calculates the \cd{dot} result of two vectors.
+\mmb{Math.Vector.cos(v1, v2): number}
+Calculates the \cd{cos} result of two vectors.
+
+\mmb{norm(): number}
+Gets the length of the vec itself.
+\mmb{dot(that): number}
+Calculates the \cd{dot} result of this and that.
+\mmb{cos(that): number}
+Calculates the \cd{cos} result of this and that.
