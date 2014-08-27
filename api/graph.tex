@@ -1,0 +1,26 @@
+\section{Graph Algorithm}
+We use \cd{T.Graph} in \cd{t.graph.js} to help implementations of some algorithms in \cd{Graph} static object, which has been put in \cd{graph.*.js}.
+
+All the following methods are invoked like \cd{Graph.*}. To create a graph object, use \cd{new T.Graph*()} 
+%(see [APIType](APIType#graph)).
+
+\mb{bfs(graph): [ ]}
+Gets the vertex visiting array by BFS order.
+\mb{dfs(graph): [ ]}
+Gets the vertex visiting array by DFS order.
+\mb{dijkstra(graph, s: number = 1): [ ]}
+Gets the shortest path length of each vertex from initial vertex $s$.
+\mb{multiMinimumCut(graph, times: number): number}
+Gets the minimum cut number of graph after that times calculations.
+\mb{mstPrim(graph, s: number = 1): number}
+Gets the total MST cost of weighted graph by Prim algorithm.
+\mb{mstKruskal(graph): number}
+Gets the total MST cost of weighted graph by Kruskal algorithm.
+\mb{mstKruskal(graph, k): number}
+Gets the max space of k-clustering by Kruskal algorithm.
+\mb{sccKosaraju(graph): [ ]}
+Gets the top $10$ large size strong connect component of directed graph, using Kosaraju algorithm.
+\mb{topologicalSort(graph): [ ]}
+Gets the topological visiting array of this directed graph.
+\mb{undirectedConnected(graph): [ ]}
+ gets an array indicating connectivity info of undirected graph. this undirected graph is connected iff  \cd{result.length == 1} AND \cd{result[0][1] == Graph.dfs(graph)}.
