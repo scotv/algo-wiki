@@ -1,0 +1,21 @@
+\section{Linear Algorithm}
+We put some algortithms on linear collection into \cd{List.*}. To use linear collection type, please go to \cd{T.Stack}, \cd{T.LinkdedList} \ldots{}
+
+A overview of time complexity laies below:
+
+
+% \begin{center}
+\begin{tabular}{l | c}
+\hline
+Call & Time Complexity \\
+\hline
+\cd{validPopStackSeries} & $O(n)$ \\
+\cd{medianMaintenence} & $O(n \ln n)$ \\
+\hline
+\end{tabular}
+% \end{center}
+
+\mb{validPopStackSeries(push: [ ], pop: [ ]): bool}
+Returns true iff we can get the \cd{pop} series from the \cd{push} series, using a stack.
+\mb{medianMaintenence(arr): [ ]}
+For each time $t$ we visit \cd{arr} from $0$ to $n-1$, we maintenence the median of all $[0, t]$ elements from input, and push this median into output array.
