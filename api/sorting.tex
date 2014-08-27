@@ -1,0 +1,15 @@
+\section{Sorting Algorithm}
+In our sorting, we pass a function as parameters, named \cd{compare(x, y) : number}. We sort the array by comparing each two value with this \cd{compare} function.
+
+The default of \cd{compare(x, y) : number} is \cd{(x, y) => x - y}, that is ascending order. While, we may pass \cd{(x, y) => y -x} to order by DESC, or we could pass \cd{(x, y) => y^2 - x^2} to order by DESC of each absolute value.
+
+\mb{isSorted(arr, compare): boolean}
+Gets a boolean value indicating whether the \cd{arr} is sorted under this \cd{compare} rule.
+\mb{quickSort(arr, compare): [ ]}
+Gets a new sorted array by quick sort.
+\mb{mergeSort(arr, compare): [ ]}
+Gets a new sorted array by merge sort.
+\mb{mergeSortBU(arr, compare): [ ]}
+Gets a new sorted array by bottom-up merge sort.
+\mb{heapSort(arr, option): [ ]}
+Gets a new sorted array by heap sort, with \cd{option = {order:"ASC"}} OR \cd{option = {order:"DESC"}}.
