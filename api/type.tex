@@ -27,13 +27,13 @@ Gets a unweighted graph with \cd{n} vertex, which is undirected by default.
 Gets a weighted graph with \cd{n} vertex, which is undirected by default.
 
 \subsection{General Members of Linear Collection}
-Linear collection like \cd{LinkedList, Stack, Queue} \ldots have the default traversal order. 
+Linear collection like \cd{LinkedList, Stack, Queue} \ldots have the default traversal order:
 
-\cd{LinkedList} traverses each element in \cd{0 ... n-1} order;
-
-\cd{Stack} traverses each element in \cd{LIFO} order;
-
-\cd{Queue} traverses each element in \cd{FIFO} order;
+\begin{itemize}
+  \item \cd{LinkedList} traverses each element in \cd{0 ... n-1} order;
+  \item \cd{Stack} traverses each element in \cd{LIFO} order;
+  \item \cd{Queue} traverses each element in \cd{FIFO} order;
+\end{itemize}
 
 There are some general members defined in linear collection. 
 
@@ -179,7 +179,7 @@ The members in weighted graph are same as the graph, except some differences bet
 \begin{center}
 \begin{tabular}{l | l}
 \hline
-Type & Element in Adjancency Lis \\
+Type & Element in Adjancency List \\
 \hline
 \cd{T.Graph} & \cd{[v, [u1, u2, u3, ...]]} \\
 \cd{T.GraphW} & \cd{[v, [(u1, w1), (u2, w2), (u3, w3), ...]]} \\
