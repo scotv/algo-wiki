@@ -1,7 +1,7 @@
 \section{Type Extension}
 All types of structures are defined in \cd{window.T}.
 
-We pass some funtion as parameter sometimes, such as \cd{.map(fn), .forEach(fn), .sort(compare)} \ldots 
+We pass some funtion as parameter sometimes, such as \cd{.map(fn)}, \cd{.forEach(fn)}, \cd{.sort(compare)} \ldots 
 The default \cd{fn} for \cd{.map(fn)} is \cd{x => x}, while the default for comparasion is \cd{(x, y) => x - y}.
 
 \subsection{Type Constructors}
@@ -27,7 +27,7 @@ Gets a unweighted graph with \cd{n} vertex, which is undirected by default.
 Gets a weighted graph with \cd{n} vertex, which is undirected by default.
 
 \subsection{General Members of Linear Collection}
-Linear collection like \cd{LinkedList, Stack, Queue} \ldots have the default traversal order:
+Linear collection like \cd{LinkedList}, \cd{Stack}, \cd{Queue} \ldots have the default traversal order:
 
 \begin{itemize}
   \item \cd{LinkedList} traverses each element in \cd{0 ... n-1} order;
@@ -105,8 +105,8 @@ Different algorithms of quick find bring us different growth of the cost, see be
 \hline
 Type & \cd{connected(p, q)} & \cd{union(p, q)} \\
 \hline
-\cd{T.QuickFind(N)} & $O(1)$ & $O(N)$ \\
-\cd{T.WeightedQuickFind(N)} & $O(\ln N)$ & $O(\ln N)$ \\
+\cd{T.QuickFind(N)} & $\mathrm{O}(1)$ & $\mathrm{O}(N)$ \\
+\cd{T.WeightedQuickFind(N)} & $\mathrm{O}(\ln N)$ & $\mathrm{O}(\ln N)$ \\
 \hline
 \end{tabular}
 \end{center}

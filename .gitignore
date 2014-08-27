@@ -101,3 +101,5 @@ sympy-plots-for-*.tex/
 *.xdy
 
 index.pdf
+_book/
+node_modules
