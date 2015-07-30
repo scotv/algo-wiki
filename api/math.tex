@@ -11,12 +11,19 @@ Gets a random integer $x$, where $ a \leq x \leq b $.
 \subsection{Statistics}
 The basic statistics extension that is located in \cd{Math.Stats.*}
 
+\mmb{equals(x: number, y: number): boolean}
+Return true iif \cd{Math.abs(x - y) < 1e-29}.
+\mmb{equals(x: Array, y: Array): boolean}
+Return true iif the length of array x and y is same and each items in same index are \cd{equals()}.
 \mmb{max(arr): number}
 Gets the max number of an array.
 \mmb{min(arr): number}
 Gets the min number of an array.
 \mmb{sum(arr): number}
 Gets the sum of an array.
+\mmb{normalize(arr): []}
+Normalizes the array, for instance: \cd{normalize([1, 7, 3])} should equal
+$[\frac{1}{1+7+3}, \frac{7}{1+7+3}, \frac{3}{1+7+3}]$.
 \mmb{mean(arr): number}
 Gets the average of an array.
 \mmb{var(arr): number}
