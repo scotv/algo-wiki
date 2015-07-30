@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="scotv/algo-wiki" data-level="2.2" data-basepath=".." data-revision="1409154175876">
+    <div class="book" data-github="scotv/algo-wiki" data-level="2.2" data-basepath=".." data-revision="1438261515978">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -508,12 +508,19 @@
 <p><a name="math-stats"></a></p>
 <h2 id="statistics">Statistics</h2>
 <p>The basic statistics extension that is located in <code>Math.Stats.*</code></p>
+<h4 id="-equals-x-number-y-number-boolean-"><code>equals(x: number, y: number): boolean</code></h4>
+<p>Return true iif <code>Math.abs(x - y) &lt; 1e-29</code>.</p>
+<h4 id="-equals-x-array-y-array-boolean-"><code>equals(x: Array, y: Array): boolean</code></h4>
+<p>Return true iif the length of array x and y is same and each items in same index are <code>equals()</code>.</p>
 <h4 id="-max-arr-number-"><code>max(arr): number</code></h4>
 <p>Gets the max number of an array.</p>
 <h4 id="-min-arr-number-"><code>min(arr): number</code></h4>
 <p>Gets the min number of an array.</p>
 <h4 id="-sum-arr-number-"><code>sum(arr): number</code></h4>
 <p>Gets the sum of an array.</p>
+<h4 id="-normalize-arr-"><code>normalize(arr): []</code></h4>
+<p>Normalizes the array, for instance: <code>normalize([1, 7, 3])</code> 
+$=[\frac{1}{1+7+3}, \frac{7}{1+7+3}, \frac{3}{1+7+3}]$.</p>
 <h4 id="-mean-arr-number-"><code>mean(arr): number</code></h4>
 <p>Gets the average of an array.</p>
 <h4 id="-var-arr-number-"><code>var(arr): number</code></h4>
