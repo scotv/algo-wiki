@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-level="2.1" data-basepath=".." data-revision="1438678004950">
+    <div class="book" data-level="2.1" data-basepath=".." data-revision="1438683121343">
     
 
 <div class="book-summary">
@@ -469,10 +469,10 @@
 <h2 id="">统计</h2>
 <p>基本的统计扩展定义在<code>Math.Stats.*</code>中。</p>
 <h4 id="equalsx-number-y-number-boolean"><code>equals(x: number, y: number): boolean</code></h4>
-<p>判断两个数的差异是否在<code>1e-29</code>误差范围之内，
+<p>判断两个数的差异是否在<script type="math/tex">10^{-29}</script>误差范围之内，
 如果在该极小范围内，则认为两个数相等，返回<code>true</code>，否则返回<code>false</code>。</p>
 <h4 id="equalsx-array-y-array-boolean"><code>equals(x: Array, y: Array): boolean</code></h4>
-<p>如果两个数组的长度相等，并且每一个索引中的对应元素差异都在<code>1e-29</code>误差范围之内，
+<p>如果两个数组的长度相等，并且每一个索引中的对应元素差异都在<script type="math/tex">10^{-29}</script>误差范围之内，
 则返回<code>true</code>，表示两个数组相等，否则返回<code>false</code>。</p>
 <h4 id="maxarr-number"><code>max(arr): number</code></h4>
 <p>返回数组中的最大值。</p>
@@ -490,8 +490,8 @@
 <h4 id="stddevarr-number"><code>stddev(arr): number</code></h4>
 <p>返回数组的样本标准差。</p>
 <h4 id="linearleastsquarex--y-fn--xx-number-number"><code>linearLeastSquare(X,  Y, fn = (x=&gt;x)): [number, number]</code></h4>
-<p>返回最小二乘法的参数<code>[a, b]</code>，满足<script type="math/tex">\operatorname{fn}(\vec{Y}) = a \cdot \operatorname{fn}(\vec{X}) + b</script>。
-如果传入参数<code>Math.log</code> 则返回最小对数二乘法的参数，满足<script type="math/tex">\vec{Y} = c \cdot (\vec{X})^a</script>, where <script type="math/tex">c = e^b</script>。</p>
+<p>返回最小二乘法的参数<script type="math/tex">[a, b]</script>，满足<script type="math/tex">\operatorname{fn}(\vec{Y}) = a \cdot \operatorname{fn}(\vec{X}) + b</script>。
+如果传入参数<code>Math.log</code> 则返回最小对数二乘法的参数，满足<script type="math/tex">\vec{Y} = c \cdot (\vec{X})^a</script>， 其中 <script type="math/tex">c = e^b</script>。</p>
 <!--[Back to top](#math)-->
                     
                     </section>
