@@ -1,14 +1,16 @@
 <!DOCTYPE HTML>
-<html lang="en-US" >
+<html lang="zh-cn" >
     
     <head>
         
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Algo.js内部机制概述 | 为algo-x而作的接口文档</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="generator" content="GitBook 2.2.0">
+        
+        
         <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -16,9 +18,19 @@
         <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
         <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
         
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-katex/katex.min.css">
         
     
     
+
+        
+    
+    
+    
+    <link rel="prev" href="./graph/index.html" />
     
 
         
@@ -26,182 +38,168 @@
     <body>
         
         
-<link rel="stylesheet" href="gitbook/style.css">
-
-
-        
-    <div class="book" data-level="7.1" data-basepath="." data-revision="1438685694558">
+    <div class="book" data-level="7.1" data-basepath="." data-revision="Thu Aug 06 2015 09:31:27 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
     <div class="book-search">
-        <input type="text" placeholder="Type to search" class="form-control" />
+        <input type="text" placeholder="输入并搜索" class="form-control" />
     </div>
     <ul class="summary">
         
-    	
-    	
-    	
+        
+        
+        
 
         
 
         
     
-        
         <li class="chapter " data-level="0" data-path="index.html">
             
                 
                     <a href="./index.html">
+                
                         <i class="fa fa-check"></i>
                         
-                         概述
+                        概述
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="1" data-path="type/index.html">
             
                 
                     <a href="./type/index.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>1.</b>
                         
-                         基本数据结构
+                        基本数据结构
                     </a>
-                
             
             
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="1.1" data-path="type/linkedlist.html">
             
                 
                     <a href="./type/linkedlist.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>1.1.</b>
                         
-                         单向链表
+                        单向链表
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="1.2" data-path="type/stack.html">
             
                 
                     <a href="./type/stack.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>1.2.</b>
                         
-                         栈
+                        栈
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="1.3" data-path="type/queue.html">
             
                 
                     <a href="./type/queue.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>1.3.</b>
                         
-                         队列
+                        队列
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="1.4" data-path="type/heap.html">
             
                 
                     <a href="./type/heap.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>1.4.</b>
                         
-                         堆
+                        堆
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="1.5" data-path="type/quickfind.html">
             
                 
                     <a href="./type/quickfind.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>1.5.</b>
                         
-                         并查集
+                        并查集
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="1.6" data-path="type/bst.html">
             
                 
                     <a href="./type/bst.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>1.6.</b>
                         
-                         二叉树
+                        二叉树
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="1.7" data-path="type/graph.html">
             
                 
                     <a href="./type/graph.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>1.7.</b>
                         
-                         有权重图
+                        有权重图
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="1.8" data-path="type/graphw.html">
             
                 
                     <a href="./type/graphw.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>1.8.</b>
                         
-                         无权重图
+                        无权重图
                     </a>
-                
             
             
         </li>
@@ -211,67 +209,63 @@
             
         </li>
     
-        
         <li class="chapter " data-level="2" data-path="math/index.html">
             
                 
                     <a href="./math/index.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.</b>
                         
-                         Math包扩展
+                        Math包扩展
                     </a>
-                
             
             
             <ul class="articles">
                 
     
-        
         <li class="chapter " data-level="2.1" data-path="math/stats.html">
             
                 
                     <a href="./math/stats.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.1.</b>
                         
-                         统计
+                        统计
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="2.2" data-path="math/point.html">
             
                 
                     <a href="./math/point.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.2.</b>
                         
-                         点
+                        点
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="2.3" data-path="math/vector.html">
             
                 
                     <a href="./math/vector.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>2.3.</b>
                         
-                         向量
+                        向量
                     </a>
-                
             
             
         </li>
@@ -281,71 +275,66 @@
             
         </li>
     
-        
         <li class="chapter " data-level="3" data-path="array/index.html">
             
                 
                     <a href="./array/index.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>3.</b>
                         
-                         Array包扩展
+                        Array包扩展
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="4" data-path="linear/index.html">
             
                 
                     <a href="./linear/index.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>4.</b>
                         
-                         线性算法
+                        线性算法
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="5" data-path="sorting/index.html">
             
                 
                     <a href="./sorting/index.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>5.</b>
                         
-                         排序算法
+                        排序算法
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="6" data-path="graph/index.html">
             
                 
                     <a href="./graph/index.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>6.</b>
                         
-                         图算法
+                        图算法
                     </a>
-                
             
             
         </li>
     
-        
         <li class="chapter " data-level="7" >
             
             <span><b>7.</b> 附录</span>
@@ -354,18 +343,17 @@
             <ul class="articles">
                 
     
-        
         <li class="chapter active" data-level="7.1" data-path="inside.html">
             
                 
                     <a href="./inside.html">
+                
                         <i class="fa fa-check"></i>
                         
                             <b>7.1.</b>
                         
-                         Algo.js内部机制概述
+                        Algo.js内部机制概述
                     </a>
-                
             
             
         </li>
@@ -380,7 +368,9 @@
         
         <li class="divider"></li>
         <li>
-            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                本书使用 GitBook 发布
+            </a>
         </li>
         
     </ul>
@@ -390,11 +380,11 @@
         <div class="body-inner">
             <div class="book-header">
     <!-- Actions Left -->
-    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
-    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <a href="#" class="btn pull-left toggle-summary" aria-label="目录"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="搜索"><i class="fa fa-search"></i></a>
     
     <div id="font-settings-wrapper" class="dropdown pull-left">
-        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        <a href="#" class="btn toggle-dropdown" aria-label="字体设置"><i class="fa fa-font"></i>
         </a>
         <div class="dropdown-menu font-settings">
     <div class="dropdown-caret">
@@ -408,14 +398,14 @@
     </div>
 
     <div class="buttons font-family-list">
-        <button type="button" data-font="0" class="button">Serif</button>
-        <button type="button" data-font="1" class="button">Sans</button>
+        <button type="button" data-font="0" class="button">衬线体</button>
+        <button type="button" data-font="1" class="button">无衬线体</button>
     </div>
 
     <div class="buttons color-theme-list">
-        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
-        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
-        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">白色</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">棕褐色</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">夜间</button>
     </div>
 </div>
 
@@ -424,7 +414,7 @@
     <!-- Actions Right -->
     
     <div class="dropdown pull-right">
-        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        <a href="#" class="btn toggle-dropdown" aria-label="分享"><i class="fa fa-share-alt"></i>
         </a>
         <div class="dropdown-menu font-settings dropdown-left">
             <div class="dropdown-caret">
@@ -432,11 +422,21 @@
                 <span class="caret-inner"></span>
             </div>
             <div class="buttons">
-                <button type="button" data-sharing="twitter" class="button">Twitter</button>
-                <button type="button" data-sharing="google-plus" class="button">Google</button>
-                <button type="button" data-sharing="facebook" class="button">Facebook</button>
-                <button type="button" data-sharing="weibo" class="button">Weibo</button>
-                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+                <button type="button" data-sharing="twitter" class="button">
+                    分享到 Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    分享到 Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    分享到 Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    分享到 Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    分享到 Instapaper
+                </button>
             </div>
         </div>
     </div>
@@ -446,6 +446,8 @@
     
     
     
+    
+
 
     <!-- Title -->
     <h1>
@@ -458,133 +460,133 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_23">
+                    <section class="normal" id="section-">
                     
                         <p><a name="overview"></a></p>
-<h1 id="algojs"><code>Algo.js</code>内部机制概述</h1>
-<p>我将试图解释<code>JavaScript</code>算法包内部的文件结构和机制说明。</p>
+<h1 id="-algo-js-%E5%86%85%E9%83%A8%E6%9C%BA%E5%88%B6%E6%A6%82%E8%BF%B0"><code>Algo.js</code>&#x5185;&#x90E8;&#x673A;&#x5236;&#x6982;&#x8FF0;</h1>
+<p>&#x6211;&#x5C06;&#x8BD5;&#x56FE;&#x89E3;&#x91CA;<code>JavaScript</code>&#x7B97;&#x6CD5;&#x5305;&#x5185;&#x90E8;&#x7684;&#x6587;&#x4EF6;&#x7ED3;&#x6784;&#x548C;&#x673A;&#x5236;&#x8BF4;&#x660E;&#x3002;</p>
 <ul>
-<li><a href="#file">文件结构</a></li>
-<li><a href="#initial">文件命名规则</a></li>
-<li><a href="#member">私有和公有成员</a></li>
-<li><a href="#static">实例和静态方法</a></li>
-<li><a href="#var">变量命名规则</a></li>
-<li><a href="#lower">小写和大写</a></li>
-<li><a href="#error">异常信息</a></li>
-<li><a href="#ut">单元测试</a></li>
-<li><a href="#coverage">代码覆盖率</a></li>
-<li><a href="#ref">参考书目</a></li>
+<li><a href="#file">&#x6587;&#x4EF6;&#x7ED3;&#x6784;</a></li>
+<li><a href="#initial">&#x6587;&#x4EF6;&#x547D;&#x540D;&#x89C4;&#x5219;</a></li>
+<li><a href="#member">&#x79C1;&#x6709;&#x548C;&#x516C;&#x6709;&#x6210;&#x5458;</a></li>
+<li><a href="#static">&#x5B9E;&#x4F8B;&#x548C;&#x9759;&#x6001;&#x65B9;&#x6CD5;</a></li>
+<li><a href="#var">&#x53D8;&#x91CF;&#x547D;&#x540D;&#x89C4;&#x5219;</a></li>
+<li><a href="#lower">&#x5C0F;&#x5199;&#x548C;&#x5927;&#x5199;</a></li>
+<li><a href="#error">&#x5F02;&#x5E38;&#x4FE1;&#x606F;</a></li>
+<li><a href="#ut">&#x5355;&#x5143;&#x6D4B;&#x8BD5;</a></li>
+<li><a href="#coverage">&#x4EE3;&#x7801;&#x8986;&#x76D6;&#x7387;</a></li>
+<li><a href="#ref">&#x53C2;&#x8003;&#x4E66;&#x76EE;</a></li>
 </ul>
 <p><a name="file"></a></p>
-<h2 id="">文件结构</h2>
-<p>同样的一个类，可能分布在不同的文件中。比如排序<code>Sorting</code>类，分布在
-<code>sorting.js</code>、<code>sorting.quickSort.js</code> 和 <code>sorting.mergeSort.js</code>中。</p>
-<p>在文件<code>sorting.quickSort.js</code>中，有一行备注：</p>
+<h2 id="%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84">&#x6587;&#x4EF6;&#x7ED3;&#x6784;</h2>
+<p>&#x540C;&#x6837;&#x7684;&#x4E00;&#x4E2A;&#x7C7B;&#xFF0C;&#x53EF;&#x80FD;&#x5206;&#x5E03;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x3002;&#x6BD4;&#x5982;&#x6392;&#x5E8F;<code>Sorting</code>&#x7C7B;&#xFF0C;&#x5206;&#x5E03;&#x5728;
+<code>sorting.js</code>&#x3001;<code>sorting.quickSort.js</code> &#x548C; <code>sorting.mergeSort.js</code>&#x4E2D;&#x3002;</p>
+<p>&#x5728;&#x6587;&#x4EF6;<code>sorting.quickSort.js</code>&#x4E2D;&#xFF0C;&#x6709;&#x4E00;&#x884C;&#x5907;&#x6CE8;&#xFF1A;</p>
 <pre><code class="lang-JavaScript"><span class="hljs-comment">// using sorting.js</span>
 </code></pre>
-<p>表示<code>quickSort</code>依赖于<code>sorting</code>。</p>
-<p>同时，我们需要在<code>index.html</code>中手动地指定引用顺序：</p>
+<p>&#x8868;&#x793A;<code>quickSort</code>&#x4F9D;&#x8D56;&#x4E8E;<code>sorting</code>&#x3002;</p>
+<p>&#x540C;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;<code>index.html</code>&#x4E2D;&#x624B;&#x52A8;&#x5730;&#x6307;&#x5B9A;&#x5F15;&#x7528;&#x987A;&#x5E8F;&#xFF1A;</p>
 <pre><code class="lang-HTML">script src=&quot;sorting.js&quot;
 script src=&quot;sorting.quickSort.js&quot;
 </code></pre>
-<p>通常而言，如果我们有三个文件：<code>basic.js</code>、 <code>basic.extendOne.js</code>和 <code>basic.extendTwo.js</code>。
-那么，<code>basic.js</code>一般是其它两个文件的前置依赖。</p>
-<p>未来可能会参考<a href="http://nodejs.org" title="Node.js" target="_blank"><code>Node.js</code></a>和<a href="http://requirejs.org" title="require.js" target="_blank"><code>RequireJS</code></a>中的<code>require()</code>作优化。
-或者直接使用<code>grunt-contrib-uglify</code>发布为单个文件。</p>
-<p><a href="#overview">回到页面上方</a></p>
+<p>&#x901A;&#x5E38;&#x800C;&#x8A00;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x6709;&#x4E09;&#x4E2A;&#x6587;&#x4EF6;&#xFF1A;<code>basic.js</code>&#x3001; <code>basic.extendOne.js</code>&#x548C; <code>basic.extendTwo.js</code>&#x3002;
+&#x90A3;&#x4E48;&#xFF0C;<code>basic.js</code>&#x4E00;&#x822C;&#x662F;&#x5176;&#x5B83;&#x4E24;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x524D;&#x7F6E;&#x4F9D;&#x8D56;&#x3002;</p>
+<p>&#x672A;&#x6765;&#x53EF;&#x80FD;&#x4F1A;&#x53C2;&#x8003;<a href="http://nodejs.org" title="Node.js" target="_blank"><code>Node.js</code></a>&#x548C;<a href="http://requirejs.org" title="require.js" target="_blank"><code>RequireJS</code></a>&#x4E2D;&#x7684;<code>require()</code>&#x4F5C;&#x4F18;&#x5316;&#x3002;
+&#x6216;&#x8005;&#x76F4;&#x63A5;&#x4F7F;&#x7528;<code>grunt-contrib-uglify</code>&#x53D1;&#x5E03;&#x4E3A;&#x5355;&#x4E2A;&#x6587;&#x4EF6;&#x3002;</p>
+<p><a href="#overview">&#x56DE;&#x5230;&#x9875;&#x9762;&#x4E0A;&#x65B9;</a></p>
 <p><a name="initial"></a></p>
-<h2 id="">文件命名规则</h2>
+<h2 id="%E6%96%87%E4%BB%B6%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99">&#x6587;&#x4EF6;&#x547D;&#x540D;&#x89C4;&#x5219;</h2>
 <table>
 <thead>
 <tr>
-<th style="text-align:left">命名</th>
-<th style="text-align:left">含义</th>
+<th style="text-align:left">&#x547D;&#x540D;</th>
+<th style="text-align:left">&#x542B;&#x4E49;</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left"> <code>t.*.js</code></td>
-<td style="text-align:left">数据结构的类型定义，比如<code>LinkedList</code>、<code>Stack</code>等</td>
+<td style="text-align:left">&#x6570;&#x636E;&#x7ED3;&#x6784;&#x7684;&#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#xFF0C;&#x6BD4;&#x5982;<code>LinkedList</code>&#x3001;<code>Stack</code>&#x7B49;</td>
 </tr>
 <tr>
 <td style="text-align:left"> <code>x.*.js</code></td>
-<td style="text-align:left">现有对象的扩展，比如<code>x.array.js</code> </td>
+<td style="text-align:left">&#x73B0;&#x6709;&#x5BF9;&#x8C61;&#x7684;&#x6269;&#x5C55;&#xFF0C;&#x6BD4;&#x5982;<code>x.array.js</code> </td>
 </tr>
 <tr>
 <td style="text-align:left"> <code>sorting.*.js</code></td>
-<td style="text-align:left">特定算法的实现，比如排序算法</td>
+<td style="text-align:left">&#x7279;&#x5B9A;&#x7B97;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x6BD4;&#x5982;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;</td>
 </tr>
 </tbody>
 </table>
-<p>文件命名时，首字母小写，采用驼峰风格。
-比如，我们采用<code>sorting.quickSort.js</code>而非<code>sorting.quick_sort.js</code>，也不是<code>Sorting.QuickSort.js</code>。</p>
-<p><a href="#overview">回到页面上方</a></p>
-<h2 id="">私有和公有成员</h2>
-<p>所有的成员命名都是首字母小写，采用驼峰风格。</p>
-<p>我们有如下两种私有成员的命名规则：</p>
+<p>&#x6587;&#x4EF6;&#x547D;&#x540D;&#x65F6;&#xFF0C;&#x9996;&#x5B57;&#x6BCD;&#x5C0F;&#x5199;&#xFF0C;&#x91C7;&#x7528;&#x9A7C;&#x5CF0;&#x98CE;&#x683C;&#x3002;
+&#x6BD4;&#x5982;&#xFF0C;&#x6211;&#x4EEC;&#x91C7;&#x7528;<code>sorting.quickSort.js</code>&#x800C;&#x975E;<code>sorting.quick_sort.js</code>&#xFF0C;&#x4E5F;&#x4E0D;&#x662F;<code>Sorting.QuickSort.js</code>&#x3002;</p>
+<p><a href="#overview">&#x56DE;&#x5230;&#x9875;&#x9762;&#x4E0A;&#x65B9;</a></p>
+<h2 id="%E7%A7%81%E6%9C%89%E5%92%8C%E5%85%AC%E6%9C%89%E6%88%90%E5%91%98">&#x79C1;&#x6709;&#x548C;&#x516C;&#x6709;&#x6210;&#x5458;</h2>
+<p>&#x6240;&#x6709;&#x7684;&#x6210;&#x5458;&#x547D;&#x540D;&#x90FD;&#x662F;&#x9996;&#x5B57;&#x6BCD;&#x5C0F;&#x5199;&#xFF0C;&#x91C7;&#x7528;&#x9A7C;&#x5CF0;&#x98CE;&#x683C;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x6709;&#x5982;&#x4E0B;&#x4E24;&#x79CD;&#x79C1;&#x6709;&#x6210;&#x5458;&#x7684;&#x547D;&#x540D;&#x89C4;&#x5219;&#xFF1A;</p>
 <ul>
-<li><code>member</code>是函数闭包中的私有变量，外部无法访问；</li>
-<li><code>__member__</code>将被视为一个私有成员，用于内部共享访问。
-虽然外部可以访问到该成员，但是<strong>不建议</strong>之间访问该成员。</li>
+<li><code>member</code>&#x662F;&#x51FD;&#x6570;&#x95ED;&#x5305;&#x4E2D;&#x7684;&#x79C1;&#x6709;&#x53D8;&#x91CF;&#xFF0C;&#x5916;&#x90E8;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#xFF1B;</li>
+<li><code>__member__</code>&#x5C06;&#x88AB;&#x89C6;&#x4E3A;&#x4E00;&#x4E2A;&#x79C1;&#x6709;&#x6210;&#x5458;&#xFF0C;&#x7528;&#x4E8E;&#x5185;&#x90E8;&#x5171;&#x4EAB;&#x8BBF;&#x95EE;&#x3002;
+&#x867D;&#x7136;&#x5916;&#x90E8;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x5230;&#x8BE5;&#x6210;&#x5458;&#xFF0C;&#x4F46;&#x662F;<strong>&#x4E0D;&#x5EFA;&#x8BAE;</strong>&#x4E4B;&#x95F4;&#x8BBF;&#x95EE;&#x8BE5;&#x6210;&#x5458;&#x3002;</li>
 </ul>
-<p>所有的私有成员定义在备注<code>// ***** private members *****</code>之下。</p>
-<p>公有成员的命名规则只有一种：首字母小写、驼峰，不带任何下划线。</p>
-<p><a href="#overview">回到页面上方</a></p>
+<p>&#x6240;&#x6709;&#x7684;&#x79C1;&#x6709;&#x6210;&#x5458;&#x5B9A;&#x4E49;&#x5728;&#x5907;&#x6CE8;<code>// ***** private members *****</code>&#x4E4B;&#x4E0B;&#x3002;</p>
+<p>&#x516C;&#x6709;&#x6210;&#x5458;&#x7684;&#x547D;&#x540D;&#x89C4;&#x5219;&#x53EA;&#x6709;&#x4E00;&#x79CD;&#xFF1A;&#x9996;&#x5B57;&#x6BCD;&#x5C0F;&#x5199;&#x3001;&#x9A7C;&#x5CF0;&#xFF0C;&#x4E0D;&#x5E26;&#x4EFB;&#x4F55;&#x4E0B;&#x5212;&#x7EBF;&#x3002;</p>
+<p><a href="#overview">&#x56DE;&#x5230;&#x9875;&#x9762;&#x4E0A;&#x65B9;</a></p>
 <p><a name="static"></a></p>
-<h2 id="">实例和静态方法</h2>
-<p>所有的类名都是首字母大写，无论它是公开的还是嵌套私有。</p>
-<p>比如我们有“点”的对象构造函数<code>new Math.Point()</code>，
-也有“点”的静态方法，定义在<code>Math.Point.member()</code></p>
-<p><strong>记得</strong> 使用关键字 <code>new</code> 来构造对象。</p>
-<p><a href="#overview">回到页面上方</a></p>
+<h2 id="%E5%AE%9E%E4%BE%8B%E5%92%8C%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95">&#x5B9E;&#x4F8B;&#x548C;&#x9759;&#x6001;&#x65B9;&#x6CD5;</h2>
+<p>&#x6240;&#x6709;&#x7684;&#x7C7B;&#x540D;&#x90FD;&#x662F;&#x9996;&#x5B57;&#x6BCD;&#x5927;&#x5199;&#xFF0C;&#x65E0;&#x8BBA;&#x5B83;&#x662F;&#x516C;&#x5F00;&#x7684;&#x8FD8;&#x662F;&#x5D4C;&#x5957;&#x79C1;&#x6709;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#x6211;&#x4EEC;&#x6709;&#x201C;&#x70B9;&#x201D;&#x7684;&#x5BF9;&#x8C61;&#x6784;&#x9020;&#x51FD;&#x6570;<code>new Math.Point()</code>&#xFF0C;
+&#x4E5F;&#x6709;&#x201C;&#x70B9;&#x201D;&#x7684;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#xFF0C;&#x5B9A;&#x4E49;&#x5728;<code>Math.Point.member()</code></p>
+<p><strong>&#x8BB0;&#x5F97;</strong> &#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57; <code>new</code> &#x6765;&#x6784;&#x9020;&#x5BF9;&#x8C61;&#x3002;</p>
+<p><a href="#overview">&#x56DE;&#x5230;&#x9875;&#x9762;&#x4E0A;&#x65B9;</a></p>
 <p><a name="var"></a></p>
-<h2 id="">变量命名规则</h2>
-<p>变量的命名参考如下规则：</p>
+<h2 id="%E5%8F%98%E9%87%8F%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99">&#x53D8;&#x91CF;&#x547D;&#x540D;&#x89C4;&#x5219;</h2>
+<p>&#x53D8;&#x91CF;&#x7684;&#x547D;&#x540D;&#x53C2;&#x8003;&#x5982;&#x4E0B;&#x89C4;&#x5219;&#xFF1A;</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:left">变量命名</th>
-<th style="text-align:left">含义</th>
+<th style="text-align:left">&#x53D8;&#x91CF;&#x547D;&#x540D;</th>
+<th style="text-align:left">&#x542B;&#x4E49;</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left"><code>$pt</code></td>
-<td style="text-align:left"><code>prototype</code>的缩写，常用于闭包内部。比如<code>$arr = Array.prototype</code> </td>
+<td style="text-align:left"><code>prototype</code>&#x7684;&#x7F29;&#x5199;&#xFF0C;&#x5E38;&#x7528;&#x4E8E;&#x95ED;&#x5305;&#x5185;&#x90E8;&#x3002;&#x6BD4;&#x5982;<code>$arr = Array.prototype</code> </td>
 </tr>
 <tr>
 <td style="text-align:left"> <code>_</code></td>
-<td style="text-align:left"><code>this</code>的缩写，比如<code>function(){var _ = this;};</code> </td>
+<td style="text-align:left"><code>this</code>&#x7684;&#x7F29;&#x5199;&#xFF0C;&#x6BD4;&#x5982;<code>function(){var _ = this;};</code> </td>
 </tr>
 <tr>
 <td style="text-align:left"> <code>*compare</code></td>
-<td style="text-align:left">排序规则，返回负数、<script type="math/tex">0</script>或者正数</td>
+<td style="text-align:left">&#x6392;&#x5E8F;&#x89C4;&#x5219;&#xFF0C;&#x8FD4;&#x56DE;&#x8D1F;&#x6570;&#x3001;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord">0</span></span></span></span>&#x6216;&#x8005;&#x6B63;&#x6570;</td>
 </tr>
 </tbody>
 </table>
-<p><a href="#overview">回到页面上方</a></p>
+<p><a href="#overview">&#x56DE;&#x5230;&#x9875;&#x9762;&#x4E0A;&#x65B9;</a></p>
 <p><a name="lower"></a></p>
-<h2 id="">小写和大写</h2>
-<p>对象的定义都是首字母大写。</p>
-<p><a href="#overview">回到页面上方</a></p>
+<h2 id="%E5%B0%8F%E5%86%99%E5%92%8C%E5%A4%A7%E5%86%99">&#x5C0F;&#x5199;&#x548C;&#x5927;&#x5199;</h2>
+<p>&#x5BF9;&#x8C61;&#x7684;&#x5B9A;&#x4E49;&#x90FD;&#x662F;&#x9996;&#x5B57;&#x6BCD;&#x5927;&#x5199;&#x3002;</p>
+<p><a href="#overview">&#x56DE;&#x5230;&#x9875;&#x9762;&#x4E0A;&#x65B9;</a></p>
 <p><a name="error"></a></p>
-<h2 id="">异常信息</h2>
-<pre><code class="lang-JavaScript"><span class="hljs-string">'不要在异常信息的末尾添加标点符号'</span>
+<h2 id="%E5%BC%82%E5%B8%B8%E4%BF%A1%E6%81%AF">&#x5F02;&#x5E38;&#x4FE1;&#x606F;</h2>
+<pre><code class="lang-JavaScript"><span class="hljs-string">&apos;&#x4E0D;&#x8981;&#x5728;&#x5F02;&#x5E38;&#x4FE1;&#x606F;&#x7684;&#x672B;&#x5C3E;&#x6DFB;&#x52A0;&#x6807;&#x70B9;&#x7B26;&#x53F7;&apos;</span>
 </code></pre>
-<p>这样便于我们拼接字符串。</p>
-<p><a href="#overview">回到页面上方</a></p>
+<p>&#x8FD9;&#x6837;&#x4FBF;&#x4E8E;&#x6211;&#x4EEC;&#x62FC;&#x63A5;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<p><a href="#overview">&#x56DE;&#x5230;&#x9875;&#x9762;&#x4E0A;&#x65B9;</a></p>
 <p><a name="ut"></a></p>
-<h2 id="">单元测试</h2>
-<p>使用<a href="http://mochajs.org/" title="Mocha.js" target="_blank"><code>Mocha</code></a>执行单元测试。</p>
-<p><a href="#overview">回到页面上方</a></p>
+<h2 id="%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95">&#x5355;&#x5143;&#x6D4B;&#x8BD5;</h2>
+<p>&#x4F7F;&#x7528;<a href="http://mochajs.org/" title="Mocha.js" target="_blank"><code>Mocha</code></a>&#x6267;&#x884C;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#x3002;</p>
+<p><a href="#overview">&#x56DE;&#x5230;&#x9875;&#x9762;&#x4E0A;&#x65B9;</a></p>
 <p><a name="coverage"></a></p>
-<h2 id="">代码覆盖率</h2>
-<p>使用<a href="http://blanketjs.org" title="Blanket.js" target="_blank"><code>Blanket.js</code></a>检查代码覆盖率。</p>
-<p><a href="#overview">回到页面上方</a></p>
+<h2 id="%E4%BB%A3%E7%A0%81%E8%A6%86%E7%9B%96%E7%8E%87">&#x4EE3;&#x7801;&#x8986;&#x76D6;&#x7387;</h2>
+<p>&#x4F7F;&#x7528;<a href="http://blanketjs.org" title="Blanket.js" target="_blank"><code>Blanket.js</code></a>&#x68C0;&#x67E5;&#x4EE3;&#x7801;&#x8986;&#x76D6;&#x7387;&#x3002;</p>
+<p><a href="#overview">&#x56DE;&#x5230;&#x9875;&#x9762;&#x4E0A;&#x65B9;</a></p>
 <p><a name="ref"></a></p>
-<h2 id="">参考文献</h2>
+<h2 id="%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE">&#x53C2;&#x8003;&#x6587;&#x732E;</h2>
 <p>[Nicholas11] Nicholas C. Zakas. Professional JavaScript for Web Developers, 3rd Edition. 2011. Wrox. 978-1-118-22219-5</p>
-<p><a href="#overview">回到页面上方</a></p>
+<p><a href="#overview">&#x56DE;&#x5230;&#x9875;&#x9762;&#x4E0A;&#x65B9;</a></p>
 
                     
                     </section>
@@ -595,6 +597,8 @@ script src=&quot;sorting.quickSort.js&quot;
         </div>
 
         
+        <a href="./graph/index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 图算法"><i class="fa fa-angle-left"></i></a>
+        
         
     </div>
 </div>
@@ -604,14 +608,6 @@ script src=&quot;sorting.quickSort.js&quot;
 
     
     <script src="gitbook/plugins/gitbook-plugin-yametrika/plugin.js"></script>
-    
-
-    
-    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-    
-    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
     
 
 <script>
