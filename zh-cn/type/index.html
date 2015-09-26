@@ -8,7 +8,7 @@
         <title>基本数据结构 | 为algo-x而作的接口文档</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 2.2.0">
+        <meta name="generator" content="GitBook 2.4.2">
         
         
         <meta name="HandheldFriendly" content="true"/>
@@ -22,6 +22,10 @@
     
         
         <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-katex/katex.min.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
         
     
     
@@ -40,22 +44,23 @@
     <body>
         
         
-    <div class="book" data-level="1" data-basepath=".." data-revision="Sun Aug 30 2015 02:01:42 GMT+0000 (UTC)">
+    <div class="book" data-level="1" data-basepath=".." data-revision="Sat Sep 26 2015 14:32:27 GMT+0800 (CST)">
     
 
 <div class="book-summary">
-    <div class="book-search">
+    <div class="book-search" role="search">
         <input type="text" placeholder="输入并搜索" class="form-control" />
     </div>
-    <ul class="summary">
-        
-        
-        
-        
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
 
-        
+            
 
-        
+            
     
         <li class="chapter " data-level="0" data-path="index.html">
             
@@ -367,20 +372,21 @@
     
 
 
-        
-        <li class="divider"></li>
-        <li>
-            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-                本书使用 GitBook 发布
-            </a>
-        </li>
-        
-    </ul>
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    本书使用 GitBook 发布
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
 </div>
 
     <div class="book-body">
         <div class="body-inner">
-            <div class="book-header">
+            <div class="book-header" role="navigation">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="目录"><i class="fa fa-align-justify"></i></a>
     <a href="#" class="btn pull-left toggle-search" aria-label="搜索"><i class="fa fa-search"></i></a>
@@ -458,7 +464,7 @@
     </h1>
 </div>
 
-            <div class="page-wrapper" tabindex="-1">
+            <div class="page-wrapper" tabindex="-1" role="main">
                 <div class="page-inner">
                 
                 
@@ -494,7 +500,7 @@
 <h2 id="%E7%BA%BF%E6%80%A7%E9%9B%86%E5%90%88%E7%9A%84%E9%80%9A%E5%88%99">&#x7EBF;&#x6027;&#x96C6;&#x5408;&#x7684;&#x901A;&#x5219;</h2>
 <p>&#x8BF8;&#x5982; <code>LinkedList</code>&#x3001; <code>Stack</code>&#x548C;<code>Queue</code> &#x8FD9;&#x6837;&#x7684;&#x7EBF;&#x6027;&#x96C6;&#x5408;&#xFF0C;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x9ED8;&#x8BA4;&#x7684;&#x904D;&#x5386;&#x65B9;&#x5F0F;&#xFF1A;</p>
 <ul>
-<li><code>LinkedList</code> &#x6309;&#x7167;&#x7D22;&#x5F15;&#x987A;&#x5E8F;&#x4ECE;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord">0</span></span></span></span>&#x5230;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>&#x2212;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span><span class="mbin">&#x2212;</span><span class="mord">1</span></span></span></span>&#x904D;&#x5386;&#xFF1B;</li>
+<li><code>LinkedList</code> &#x6309;&#x7167;&#x7D22;&#x5F15;&#x987A;&#x5E8F;&#x4ECE;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">0</span></span></span></span>&#x5230;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>&#x2212;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span><span class="mbin">&#x2212;</span><span class="mord mathrm">1</span></span></span></span>&#x904D;&#x5386;&#xFF1B;</li>
 <li><code>Stack</code>&#x6309;&#x7167;&#x5148;&#x8FDB;&#x540E;&#x51FA;&#x7684;&#x89C4;&#x5219;&#x904D;&#x5386;&#xFF1B;</li>
 <li><code>Queue</code>&#x6309;&#x7167;&#x5148;&#x8FDB;&#x5148;&#x51FA;&#x7684;&#x89C4;&#x5219;&#x904D;&#x5386;&#x3002;</li>
 </ul>

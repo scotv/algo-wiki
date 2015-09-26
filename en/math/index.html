@@ -8,7 +8,7 @@
         <title>Math Operation Extension | The API Documents for algo-x</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 2.2.0">
+        <meta name="generator" content="GitBook 2.4.2">
         
         
         <meta name="HandheldFriendly" content="true"/>
@@ -22,6 +22,10 @@
     
         
         <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-katex/katex.min.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
         
     
     
@@ -40,22 +44,23 @@
     <body>
         
         
-    <div class="book" data-level="2" data-basepath=".." data-revision="Sun Aug 30 2015 02:01:41 GMT+0000 (UTC)">
+    <div class="book" data-level="2" data-basepath=".." data-revision="Sat Sep 26 2015 14:32:25 GMT+0800 (CST)">
     
 
 <div class="book-summary">
-    <div class="book-search">
+    <div class="book-search" role="search">
         <input type="text" placeholder="Type to search" class="form-control" />
     </div>
-    <ul class="summary">
-        
-        
-        
-        
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
 
-        
+            
 
-        
+            
     
         <li class="chapter " data-level="0" data-path="index.html">
             
@@ -367,20 +372,21 @@
     
 
 
-        
-        <li class="divider"></li>
-        <li>
-            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-                Published with GitBook
-            </a>
-        </li>
-        
-    </ul>
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
 </div>
 
     <div class="book-body">
         <div class="body-inner">
-            <div class="book-header">
+            <div class="book-header" role="navigation">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
     <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
@@ -458,7 +464,7 @@
     </h1>
 </div>
 
-            <div class="page-wrapper" tabindex="-1">
+            <div class="page-wrapper" tabindex="-1" role="main">
                 <div class="page-inner">
                 
                 
@@ -468,7 +474,7 @@
 <h1 id="-math-extension"><code>Math</code> Extension</h1>
 <p>The basic extensions for <code>Math</code>.</p>
 <h4 id="-math-mod-i-n-number"><code>Math.mod(i, n): number</code></h4>
-<p>Returns a positive number <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">x</span></span></span></span>, where <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi><mo>=</mo><mi>k</mi><mo>&#x2217;</mo><mi>n</mi><mo>+</mo><mi>x</mi><mo separator="true">,</mo><mo>(</mo><mi>x</mi><mo>&#x2208;</mo><mo>[</mo><mn>0</mn><mo separator="true">,</mo><mi>n</mi><mo>)</mo><mo>)</mo></mrow><annotation encoding="application/x-tex">i = k * n + x, (x \in [0, n) )</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit">i</span><span class="mrel">=</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mbin">&#x2217;</span><span class="mord mathit">n</span><span class="mbin">+</span><span class="mord mathit">x</span><span class="mpunct">,</span><span class="mopen">(</span><span class="mord mathit">x</span><span class="mrel">&#x2208;</span><span class="mopen">[</span><span class="mord">0</span><span class="mpunct">,</span><span class="mord mathit">n</span><span class="mclose">)</span><span class="mclose">)</span></span></span></span>.</p>
+<p>Returns a positive number <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">x</span></span></span></span>, where <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi><mo>=</mo><mi>k</mi><mo>&#x2217;</mo><mi>n</mi><mo>+</mo><mi>x</mi><mo separator="true">,</mo><mo>(</mo><mi>x</mi><mo>&#x2208;</mo><mo>[</mo><mn>0</mn><mo separator="true">,</mo><mi>n</mi><mo>)</mo><mo>)</mo></mrow><annotation encoding="application/x-tex">i = k * n + x, (x \in [0, n) )</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit">i</span><span class="mrel">=</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mbin">&#x2217;</span><span class="mord mathit">n</span><span class="mbin">+</span><span class="mord mathit">x</span><span class="mpunct">,</span><span class="mopen">(</span><span class="mord mathit">x</span><span class="mrel">&#x2208;</span><span class="mopen">[</span><span class="mord mathrm">0</span><span class="mpunct">,</span><span class="mord mathit">n</span><span class="mclose">)</span><span class="mclose">)</span></span></span></span>.</p>
 <h4 id="-math-range-start-0-end-step-1"><code>Math.range(start = 0, end, step = 1): []</code></h4>
 <p>Generates an array of range from <code>start</code> (inclusive) to <code>end</code> (exclusive), with that <code>step</code>.</p>
 <h4 id="-math-randominteger-a-0-b-number"><code>Math.randomInteger(a = 0, b): number</code></h4>

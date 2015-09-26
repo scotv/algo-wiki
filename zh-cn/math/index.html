@@ -8,7 +8,7 @@
         <title>Math包扩展 | 为algo-x而作的接口文档</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 2.2.0">
+        <meta name="generator" content="GitBook 2.4.2">
         
         
         <meta name="HandheldFriendly" content="true"/>
@@ -22,6 +22,10 @@
     
         
         <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-katex/katex.min.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
         
     
     
@@ -40,22 +44,23 @@
     <body>
         
         
-    <div class="book" data-level="2" data-basepath=".." data-revision="Sun Aug 30 2015 02:01:42 GMT+0000 (UTC)">
+    <div class="book" data-level="2" data-basepath=".." data-revision="Sat Sep 26 2015 14:32:27 GMT+0800 (CST)">
     
 
 <div class="book-summary">
-    <div class="book-search">
+    <div class="book-search" role="search">
         <input type="text" placeholder="输入并搜索" class="form-control" />
     </div>
-    <ul class="summary">
-        
-        
-        
-        
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
 
-        
+            
 
-        
+            
     
         <li class="chapter " data-level="0" data-path="index.html">
             
@@ -367,20 +372,21 @@
     
 
 
-        
-        <li class="divider"></li>
-        <li>
-            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-                本书使用 GitBook 发布
-            </a>
-        </li>
-        
-    </ul>
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    本书使用 GitBook 发布
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
 </div>
 
     <div class="book-body">
         <div class="body-inner">
-            <div class="book-header">
+            <div class="book-header" role="navigation">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="目录"><i class="fa fa-align-justify"></i></a>
     <a href="#" class="btn pull-left toggle-search" aria-label="搜索"><i class="fa fa-search"></i></a>
@@ -458,7 +464,7 @@
     </h1>
 </div>
 
-            <div class="page-wrapper" tabindex="-1">
+            <div class="page-wrapper" tabindex="-1" role="main">
                 <div class="page-inner">
                 
                 
@@ -468,9 +474,9 @@
 <h1 id="-math-%E5%8C%85%E6%89%A9%E5%B1%95"><code>Math</code>&#x5305;&#x6269;&#x5C55;</h1>
 <p>&#x5BF9; <code>JavaScript</code>&#x4E2D;&#x7684;<code>Math</code>&#x505A;&#x4E86;&#x6269;&#x5C55;&#x3002;</p>
 <h4 id="-math-mod-i-n-number"><code>Math.mod(i, n): number</code></h4>
-<p>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x975E;&#x8D1F;&#x6570;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">x</span></span></span></span>&#xFF0C;&#x6EE1;&#x8DB3;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi><mo>=</mo><mi>k</mi><mo>&#x2217;</mo><mi>n</mi><mo>+</mo><mi>x</mi><mo separator="true">,</mo><mo>(</mo><mi>x</mi><mo>&#x2208;</mo><mo>[</mo><mn>0</mn><mo separator="true">,</mo><mi>n</mi><mo>)</mo><mo>)</mo></mrow><annotation encoding="application/x-tex">i = k * n + x, (x \in [0, n))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit">i</span><span class="mrel">=</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mbin">&#x2217;</span><span class="mord mathit">n</span><span class="mbin">+</span><span class="mord mathit">x</span><span class="mpunct">,</span><span class="mopen">(</span><span class="mord mathit">x</span><span class="mrel">&#x2208;</span><span class="mopen">[</span><span class="mord">0</span><span class="mpunct">,</span><span class="mord mathit">n</span><span class="mclose">)</span><span class="mclose">)</span></span></span></span>&#x3002;</p>
+<p>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x975E;&#x8D1F;&#x6570;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">x</span></span></span></span>&#xFF0C;&#x6EE1;&#x8DB3;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi><mo>=</mo><mi>k</mi><mo>&#x2217;</mo><mi>n</mi><mo>+</mo><mi>x</mi><mo separator="true">,</mo><mo>(</mo><mi>x</mi><mo>&#x2208;</mo><mo>[</mo><mn>0</mn><mo separator="true">,</mo><mi>n</mi><mo>)</mo><mo>)</mo></mrow><annotation encoding="application/x-tex">i = k * n + x, (x \in [0, n))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit">i</span><span class="mrel">=</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mbin">&#x2217;</span><span class="mord mathit">n</span><span class="mbin">+</span><span class="mord mathit">x</span><span class="mpunct">,</span><span class="mopen">(</span><span class="mord mathit">x</span><span class="mrel">&#x2208;</span><span class="mopen">[</span><span class="mord mathrm">0</span><span class="mpunct">,</span><span class="mord mathit">n</span><span class="mclose">)</span><span class="mclose">)</span></span></span></span>&#x3002;</p>
 <h4 id="-math-range-start-0-end-step-1"><code>Math.range(start = 0, end, step = 1): []</code></h4>
-<p>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6B65;&#x957F;&#x4E3A;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext><mi mathvariant="normal">s</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">p</mi></mtext></mrow><annotation encoding="application/x-tex">\text{step}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.61508em;"></span><span class="strut bottom" style="height:0.80952em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="text mord textstyle uncramped"><span class="mord">s</span><span class="mord">t</span><span class="mord">e</span><span class="mord">p</span></span></span></span></span>&#x7684;&#x6709;&#x5E8F;&#x5E8F;&#x5217;&#xFF0C;&#x6784;&#x6210;&#x7684;&#x533A;&#x95F4;&#x4E3A;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mo fence="true">[</mo><mtext><mi mathvariant="normal">s</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">t</mi></mtext><mo separator="true">,</mo><mtext><mi mathvariant="normal">e</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">d</mi></mtext><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">\left[\text{start}, \text{end}\right)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="minner textstyle uncramped"><span class="style-wrap reset-textstyle textstyle uncramped" style="top:0em;">[</span><span class="text mord textstyle uncramped"><span class="mord">s</span><span class="mord">t</span><span class="mord">a</span><span class="mord">r</span><span class="mord">t</span></span><span class="mpunct">,</span><span class="text mord textstyle uncramped"><span class="mord">e</span><span class="mord">n</span><span class="mord">d</span></span><span class="style-wrap reset-textstyle textstyle uncramped" style="top:0em;">)</span></span></span></span></span>&#x3002;
+<p>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6B65;&#x957F;&#x4E3A;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext><mi mathvariant="normal">s</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">p</mi></mtext></mrow><annotation encoding="application/x-tex">\text{step}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.61508em;"></span><span class="strut bottom" style="height:0.80952em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="text mord textstyle uncramped"><span class="mord mathrm">s</span><span class="mord mathrm">t</span><span class="mord mathrm">e</span><span class="mord mathrm">p</span></span></span></span></span>&#x7684;&#x6709;&#x5E8F;&#x5E8F;&#x5217;&#xFF0C;&#x6784;&#x6210;&#x7684;&#x533A;&#x95F4;&#x4E3A;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mo fence="true">[</mo><mtext><mi mathvariant="normal">s</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">t</mi></mtext><mo separator="true">,</mo><mtext><mi mathvariant="normal">e</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">d</mi></mtext><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">\left[\text{start}, \text{end}\right)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="minner textstyle uncramped"><span class="style-wrap reset-textstyle textstyle uncramped" style="top:0em;">[</span><span class="text mord textstyle uncramped"><span class="mord mathrm">s</span><span class="mord mathrm">t</span><span class="mord mathrm">a</span><span class="mord mathrm">r</span><span class="mord mathrm">t</span></span><span class="mpunct">,</span><span class="text mord textstyle uncramped"><span class="mord mathrm">e</span><span class="mord mathrm">n</span><span class="mord mathrm">d</span></span><span class="style-wrap reset-textstyle textstyle uncramped" style="top:0em;">)</span></span></span></span></span>&#x3002;
 &#x8BE5;&#x533A;&#x95F4;&#x4E3A;&#x5DE6;&#x95ED;&#x53F3;&#x5F00;&#x3002;</p>
 <h4 id="-math-randominteger-a-0-b-number"><code>Math.randomInteger(a = 0, b): number</code></h4>
 <p>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x6574;&#x6570;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">x</span></span></span></span>&#xFF0C;&#x6EE1;&#x8DB3;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo>&#x2264;</mo><mi>x</mi><mo>&#x2264;</mo><mi>b</mi></mrow><annotation encoding="application/x-tex"> a \leq x \leq b </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.83041em;vertical-align:-0.13597em;"></span><span class="base textstyle uncramped"><span class="mord mathit">a</span><span class="mrel">&#x2264;</span><span class="mord mathit">x</span><span class="mrel">&#x2264;</span><span class="mord mathit">b</span></span></span></span>&#x3002;</p>
