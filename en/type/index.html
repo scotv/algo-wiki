@@ -57,7 +57,7 @@
         data-chapter-title="Basic Type Extension"
         data-filepath="type/index.md"
         data-basepath=".."
-        data-revision="Thu Aug 18 2016 13:11:16 GMT+0800 (CST)"
+        data-revision="Tue Aug 30 2016 15:31:13 GMT+0800 (CST)"
         data-innerlanguage="en">
     
 
@@ -353,34 +353,6 @@
             
         </li>
     
-        <li class="chapter " data-level="7" >
-            
-            <span><b>7.</b> Appendix</span>
-            
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="7.1" data-path="inside.html">
-            
-                
-                    <a href="../inside.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>7.1.</b>
-                        
-                        Inside this
-                    </a>
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
 
 
             
@@ -416,29 +388,29 @@
                     
                         <p><a name="t"></a></p>
 <h1 id="type-extension">Type Extension</h1>
-<p>All typies in data structure are defined in <code>window.T</code>.</p>
+<p>All typies in data structure are defined in <code>algo.type</code>.</p>
 <p>A function can be the parameter, such as in <code>.map(fn)</code>, <code>.forEach(fn)</code>, <code>.sort(compare)</code>, etc. 
 The default <code>fn</code> in <code>.map(fn)</code> is <code>x =&gt; x</code>, while the default comparasion way is <code>(x, y) =&gt; x - y</code>.</p>
 <h2 id="type-constructors">Type Constructors</h2>
-<h4 id="new-tlinkedlist"><code>new T.LinkedList()</code></h4>
+<h4 id="new-algotypelinkedlist"><code>new algo.type.LinkedList()</code></h4>
 <p>Constructs a new linked list.</p>
-<h4 id="new-tstack"><code>new T.Stack()</code></h4>
+<h4 id="new-algotypestack"><code>new algo.type.Stack()</code></h4>
 <p>Constructs a new stack</p>
-<h4 id="new-tqueue"><code>new T.Queue()</code></h4>
+<h4 id="new-algotypequeue"><code>new algo.type.Queue()</code></h4>
 <p>Constructs a new queue.</p>
-<h4 id="new-tmaxheap-heap"><code>new T.MaxHeap(): heap</code></h4>
+<h4 id="new-algotypemaxheap-heap"><code>new algo.type.MaxHeap(): heap</code></h4>
 <p>Gets a new max heap.</p>
-<h4 id="new-tminheapcompare-heap"><code>new T.MinHeap(compare): heap</code></h4>
+<h4 id="new-algotypeminheapcompare-heap"><code>new algo.type.MinHeap(compare): heap</code></h4>
 <p>Gets a new min heap.</p>
-<h4 id="new-tquickfindn-number-unionfind"><code>new T.QuickFind(n: number): unionfind</code></h4>
+<h4 id="new-algotypequickfindn-number-unionfind"><code>new algo.type.QuickFind(n: number): unionfind</code></h4>
 <p>Gets an union find by QuickFind algorithm.</p>
-<h4 id="new-tweightedquickunionn-number-unionfind"><code>new T.WeightedQuickUnion(n: number): unionfind</code></h4>
+<h4 id="new-algotypeweightedquickunionn-number-unionfind"><code>new algo.type.WeightedQuickUnion(n: number): unionfind</code></h4>
 <p>Gets an union find by Weighted QuickFind algorithm.</p>
-<h4 id="new-tbinarysearchtreecompare"><code>new T.BinarySearchTree(compare)</code></h4>
+<h4 id="new-algotypebinarysearchtreecompare"><code>new algo.type.BinarySearchTree(compare)</code></h4>
 <p>Gets a Binary Search Tree with the specific comparasion rule.</p>
-<h4 id="new-tgraphn-number-directed-bool--false"><code>new T.Graph(n: number, directed: bool = false)</code></h4>
+<h4 id="new-algotypegraphn-number-directed-bool--false"><code>new algo.type.Graph(n: number, directed: bool = false)</code></h4>
 <p>Gets a unweighted graph with <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> vertex, which is undirected by default.</p>
-<h4 id="new-tgraphwn-number-directed-bool--false"><code>new T.GraphW(n: number, directed: bool = false)</code></h4>
+<h4 id="new-algotypegraphwn-number-directed-bool--false"><code>new algo.type.GraphW(n: number, directed: bool = false)</code></h4>
 <p>Gets a weighted graph with <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> vertex, which is undirected by default.</p>
 <p><a href="#t">Back to top</a></p>
 <h2 id="general-members-of-linear-collection">General Members of Linear Collection</h2>

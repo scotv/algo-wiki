@@ -57,7 +57,7 @@
         data-chapter-title="Array Extension"
         data-filepath="array/index.md"
         data-basepath=".."
-        data-revision="Thu Aug 18 2016 13:11:16 GMT+0800 (CST)"
+        data-revision="Tue Aug 30 2016 15:31:13 GMT+0800 (CST)"
         data-innerlanguage="en">
     
 
@@ -353,34 +353,6 @@
             
         </li>
     
-        <li class="chapter " data-level="7" >
-            
-            <span><b>7.</b> Appendix</span>
-            
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="7.1" data-path="inside.html">
-            
-                
-                    <a href="../inside.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>7.1.</b>
-                        
-                        Inside this
-                    </a>
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
 
 
             
@@ -416,18 +388,20 @@
                     
                         <p><a name="array"></a></p>
 <h1 id="array-extension"><code>Array</code> Extension</h1>
-<p>The basic extensions for Array.</p>
-<h4 id="arrayziparr1-arr2-"><code>Array.zip(arr1, arr2): []</code></h4>
+<p>The basic extensions for <code>Array</code>.</p>
+<h4 id="algolineararrayziparr1-arr2-"><code>algo.linear.array.zip(arr1, arr2): []</code></h4>
 <p>Returns an new array, each item in which is <code>[x, y]</code>, where <code>x</code> from <code>arr1</code> and <code>y</code> from <code>arr2</code>.</p>
 <pre><code class="lang-JavaScript"><span class="hljs-built_in">Array</span>.zip([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-string">&apos;A&apos;</span>, <span class="hljs-string">&apos;B&apos;</span>, <span class="hljs-string">&apos;C&apos;</span>])
 <span class="hljs-comment">// [[1, &apos;A&apos;], [2, &apos;B&apos;], [3, &apos;C&apos;]]</span>
 </code></pre>
-<h4 id="arrayswaparr-i-j-void"><code>Array.swap(arr, i, j): void</code></h4>
+<h4 id="algolineararrayswaparr-i-j-void"><code>algo.linear.array.swap(arr, i, j): void</code></h4>
 <p>Swaps the elements at index <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.65952em;"></span><span class="strut bottom" style="height:0.65952em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">i</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>j</mi></mrow><annotation encoding="application/x-tex">j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.65952em;"></span><span class="strut bottom" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05724em;">j</span></span></span></span>, and does modify the original <code>arr</code>.</p>
 <h4 id="clone-"><code>.clone(): []</code></h4>
 <p>Get a new array cloned from the <code>arr</code> itself.</p>
+<p>Use <code>[...arr]</code> instead.</p>
 <h4 id="zipthat-"><code>.zip(that): []</code></h4>
 <p>Gets <code>Array.zip(this, that)</code>.</p>
+<p>Use <code>algo.linear.array.swap(this, that)</code> instead.</p>
 <!--[Back to top](#array)-->
 
                     

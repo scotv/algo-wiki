@@ -57,7 +57,7 @@
         data-chapter-title="BinarySearchTree"
         data-filepath="type/bst.md"
         data-basepath=".."
-        data-revision="Thu Aug 18 2016 13:11:16 GMT+0800 (CST)"
+        data-revision="Tue Aug 30 2016 15:31:13 GMT+0800 (CST)"
         data-innerlanguage="en">
     
 
@@ -353,34 +353,6 @@
             
         </li>
     
-        <li class="chapter " data-level="7" >
-            
-            <span><b>7.</b> Appendix</span>
-            
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="7.1" data-path="inside.html">
-            
-                
-                    <a href="../inside.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>7.1.</b>
-                        
-                        Inside this
-                    </a>
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
 
 
             
@@ -434,8 +406,8 @@ there are two versions:</p>
 <!--The depth of a node is the length of the path to its root (i.e., its root path). The root node has depth zero, leaf nodes have height zero.-->
 <!-- -->
 <!-- The height of the root is the height of the tree. An empty tree (tree with no nodes, if such are allowed) has depth and height `−1`.-->
-<p>We have defined different traversal way in <code>T.TRAVERSAL.*</code>. 
-The default traversal way is <code>T.TRAVERSAL.IN_ORDER</code>.</p>
+<p>We have defined different traversal way in <code>algo.type.TRAVERSAL.*</code>. 
+The default traversal way is <code>algo.type.TRAVERSAL.IN_ORDER</code>.</p>
 <h4 id="searchelem-node"><code>search(elem): node</code></h4>
 <p>Searches <code>elem</code> in this tree, returns node which contains<code>elem</code>, or <code>null</code> if not exsits.</p>
 <p>Recursive version is <code>rSearch(elem): node</code>.</p>
@@ -443,10 +415,10 @@ The default traversal way is <code>T.TRAVERSAL.IN_ORDER</code>.</p>
 <p>Inserts <code>elem</code> under <code>BST</code> order, no duplication.</p>
 <p>Recursive version is <code>rInsert(elem): void</code>.</p>
 <h4 id="foreacht-traversal-fn-void"><code>forEach(t: TRAVERSAL, fn): void</code></h4>
-<p>Travels and applies function <code>fn</code> on this <code>BST</code> tree with specific <code>T.TRAVERSA</code> order.</p>
+<p>Travels and applies function <code>fn</code> on this <code>BST</code> tree with specific <code>algo.type.TRAVERSAL</code> order.</p>
 <p>Recursive version is <code>rForEach(t: TRAVERSAL, fn): void</code>.</p>
 <h4 id="mapt-traversal-fn-any"><code>map(t: TRAVERSAL, fn): [any]</code></h4>
-<p>Maps each element of this <code>BST</code> tree into an array with specific <code>T.TRAVERSA</code> order.</p>
+<p>Maps each element of this <code>BST</code> tree into an array with specific <code>algo.type.TRAVERSAL</code> order.</p>
 <p>Recursive version is <code>rMap(t: TRAVERSAL, fn): void</code>.</p>
 <p><a href="#t">Back to top</a></p>
 <!--[1]: https://en.wikipedia.org/wiki/Tree_(data_structure)#Terminology "Tree Term"-->

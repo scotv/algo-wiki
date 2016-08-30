@@ -57,7 +57,7 @@
         data-chapter-title="基本数据结构"
         data-filepath="type/index.md"
         data-basepath=".."
-        data-revision="Thu Aug 18 2016 13:11:17 GMT+0800 (CST)"
+        data-revision="Tue Aug 30 2016 15:31:14 GMT+0800 (CST)"
         data-innerlanguage="zh-cn">
     
 
@@ -353,34 +353,6 @@
             
         </li>
     
-        <li class="chapter " data-level="7" >
-            
-            <span><b>7.</b> 附录</span>
-            
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="7.1" data-path="inside.html">
-            
-                
-                    <a href="../inside.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>7.1.</b>
-                        
-                        Algo.js内部机制概述
-                    </a>
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
 
 
             
@@ -416,29 +388,29 @@
                     
                         <p><a name="t"></a></p>
 <h1 id="&#x57FA;&#x672C;&#x6570;&#x636E;&#x7ED3;&#x6784;">&#x57FA;&#x672C;&#x6570;&#x636E;&#x7ED3;&#x6784;</h1>
-<p>&#x6570;&#x636E;&#x7ED3;&#x6784;&#x7684;&#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#x5728;<code>window.T</code>&#x91CC;&#x9762;&#x3002;</p>
+<p>&#x6570;&#x636E;&#x7ED3;&#x6784;&#x7684;&#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#x5728;<code>algo.type</code>&#x91CC;&#x9762;&#x3002;</p>
 <p>&#x540D;&#x4E3A;<code>fn</code>&#x6216;&#x8005;<code>compare</code>&#x7684;&#x53C2;&#x6570;&#x901A;&#x5E38;&#x90FD;&#x662F;&#x51FD;&#x6570;&#xFF0C;&#x6BD4;&#x5982;<code>.map(fn)</code>&#x3001; <code>.forEach(fn)</code>&#x3001; <code>.sort(compare)</code>&#x7B49;&#x3002; 
 <code>.map(fn)</code>&#x7684;&#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#x662F; <code>x =&gt; x</code>&#xFF0C;&#x800C;&#x9ED8;&#x8BA4;&#x7684;&#x6392;&#x5E8F;&#x89C4;&#x5219;&#x91C7;&#x7528;&#x9012;&#x589E;&#x6392;&#x5E8F;&#xFF1A;<code>(x, y) =&gt; x - y</code>&#x3002;</p>
 <h2 id="&#x7C7B;&#x578B;&#x6784;&#x9020;&#x5668;">&#x7C7B;&#x578B;&#x6784;&#x9020;&#x5668;</h2>
-<h4 id="new-tlinkedlist"><code>new T.LinkedList()</code></h4>
+<h4 id="new-algotypelinkedlist"><code>new algo.type.LinkedList()</code></h4>
 <p>&#x6784;&#x9020;&#x4E00;&#x4E2A;&#x5355;&#x5411;&#x94FE;&#x63A5;&#x8868;&#x3002;</p>
-<h4 id="new-tstack"><code>new T.Stack()</code></h4>
+<h4 id="new-algotypestack"><code>new algo.type.Stack()</code></h4>
 <p>&#x6784;&#x9020;&#x4E00;&#x4E2A;&#x6808;&#x3002;</p>
-<h4 id="new-tqueue"><code>new T.Queue()</code></h4>
+<h4 id="new-algotypequeue"><code>new algo.type.Queue()</code></h4>
 <p>&#x6784;&#x9020;&#x4E00;&#x4E2A;&#x961F;&#x5217;&#x3002;</p>
-<h4 id="new-tmaxheap-heap"><code>new T.MaxHeap(): heap</code></h4>
+<h4 id="new-algotypemaxheap-heap"><code>new algo.type.MaxHeap(): heap</code></h4>
 <p>&#x6784;&#x9020;&#x4E00;&#x4E2A;&#x6700;&#x5927;&#x5806;&#x3002;</p>
-<h4 id="new-tminheapcompare-heap"><code>new T.MinHeap(compare): heap</code></h4>
+<h4 id="new-algotypeminheapcompare-heap"><code>new algo.type.MinHeap(compare): heap</code></h4>
 <p>&#x6784;&#x9020;&#x4E00;&#x4E2A;&#x6700;&#x5C0F;&#x5806;&#x3002;</p>
-<h4 id="new-tquickfindn-number-unionfind"><code>new T.QuickFind(n: number): unionfind</code></h4>
+<h4 id="new-algotypequickfindn-number-unionfind"><code>new algo.type.QuickFind(n: number): unionfind</code></h4>
 <p>&#x6784;&#x9020;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;<code>QuickFind</code>&#x7B97;&#x6CD5;&#x7684;&#x5E76;&#x67E5;&#x96C6;&#x3002;</p>
-<h4 id="new-tweightedquickunionn-number-unionfind"><code>new T.WeightedQuickUnion(n: number): unionfind</code></h4>
+<h4 id="new-algotypeweightedquickunionn-number-unionfind"><code>new algo.type.WeightedQuickUnion(n: number): unionfind</code></h4>
 <p>&#x6784;&#x9020;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;<code>WeightedQuickUnion</code>&#x7B97;&#x6CD5;&#x7684;&#x5E76;&#x67E5;&#x96C6;&#x3002;</p>
-<h4 id="new-tbinarysearchtreecompare"><code>new T.BinarySearchTree(compare)</code></h4>
+<h4 id="new-algotypebinarysearchtreecompare"><code>new algo.type.BinarySearchTree(compare)</code></h4>
 <p>&#x6784;&#x9020;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;&#x6307;&#x5B9A;&#x6392;&#x5E8F;&#x89C4;&#x5219;&#x7684;&#x4E8C;&#x53C9;&#x6811;&#x3002;</p>
-<h4 id="new-tgraphn-number-directed-bool--false"><code>new T.Graph(n: number, directed: bool = false)</code></h4>
+<h4 id="new-algotypegraphn-number-directed-bool--false"><code>new algo.type.Graph(n: number, directed: bool = false)</code></h4>
 <p>&#x6784;&#x9020;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x6570;&#x76EE;&#x4E3A;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span>&#x7684;&#x65E0;&#x6743;&#x91CD;&#x56FE;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x65E0;&#x5411;&#x56FE;&#x3002;</p>
-<h4 id="new-tgraphwn-number-directed-bool--false"><code>new T.GraphW(n: number, directed: bool = false)</code></h4>
+<h4 id="new-algotypegraphwn-number-directed-bool--false"><code>new algo.type.GraphW(n: number, directed: bool = false)</code></h4>
 <p>&#x6784;&#x9020;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x6570;&#x76EE;&#x4E3A;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span>&#x7684;&#x6709;&#x6743;&#x91CD;&#x56FE;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x65E0;&#x5411;&#x56FE;&#x3002;</p>
 <p><a href="#t">&#x56DE;&#x5230;&#x9875;&#x9762;&#x4E0A;&#x65B9;</a></p>
 <h2 id="&#x7EBF;&#x6027;&#x96C6;&#x5408;&#x7684;&#x901A;&#x5219;">&#x7EBF;&#x6027;&#x96C6;&#x5408;&#x7684;&#x901A;&#x5219;</h2>
