@@ -5,11 +5,8 @@
 
 `meta` | Data
 :----|:-------
-Last updated | Aug, 2016
-Version | $$3.1$$
+Version | [obsoleted] Wiki docs has been moved to [tango](https://scozv.github.io/tango/)
 `LaTeX` engine | [`KaTeX`] [4]
-drone.io | [![Build Status](https://drone.io/github.com/scozv/algo-wiki/status.png)](https://drone.io/github.com/scozv/algo-wiki/latest)
-david-dm | [![devDependency Status](https://david-dm.org/scozv/algo-wiki/dev-status.png)](https://david-dm.org/scozv/algo-wiki#info=devDependencies)
 
 
 An initial PDF document writed in `LaTeX` has been released on

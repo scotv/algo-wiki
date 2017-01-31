@@ -5,11 +5,8 @@
 
 元 | 数据
 :----|:-------
-最后更新 | 2016年8月
-版本编号 | $$3.1$$
+版本编号 | 不再更新，该文档已经转移到[`tango`项目](https://scozv.github.io/tango/)
 `LaTeX`引擎 | [`KaTeX`] [4]
-drone.io | [![Build Status](https://drone.io/github.com/scozv/algo-wiki/status.png)](https://drone.io/github.com/scozv/algo-wiki/latest)
-david-dm | [![devDependency Status](https://david-dm.org/scozv/algo-wiki/dev-status.png)](https://david-dm.org/scozv/algo-wiki#info=devDependencies)
 
 早期的一份基于`LaTeX`编译的PDF文档发布在
 [Releases](https://github.com/scozv/algo-wiki/releases)页面。
